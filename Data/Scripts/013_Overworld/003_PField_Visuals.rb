@@ -1,16 +1,69 @@
-#===============================================================================
-# Location signpost
-#===============================================================================
+################################################################################
+# Location signpost - Updated by LostSoulsDev / carmaniac & PurpleZaffre
+################################################################################
 class LocationWindow
   def initialize(name)
-    @window = Window_AdvancedTextPokemon.new(name)
-    @window.resizeToFit(name,Graphics.width)
-    @window.x        = 0
-    @window.y        = -@window.height
-    @window.viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
-    @window.viewport.z = 99999
-    @currentmap = $game_map.map_id
-    @frames = 0
+    @sprites = {}
+    
+    @sprites["overlay"]=Sprite.new
+    @sprites["overlay"].bitmap=Bitmap.new(Graphics.width*4,Graphics.height*4)
+    @sprites["overlay"].z=9999999
+    pbSetSystemFont(@sprites["overlay"].bitmap)
+    @overlay = @sprites["overlay"].bitmap
+    @overlay.clear
+    @baseColor=Color.new(255,255,240)
+    @shadowColor=Color.new(148,148,165)
+    
+    @sprites["Image"] = Sprite.new
+    if $game_map.name.include?("Route 1") || $game_map.name.include?("Route 7") || $game_map.name.include?("Poké-Springs")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/Route_1")
+    elsif $game_map.name.include?("Belfry") || $game_map.name.include?("Ruins")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/HGSS_7")
+    elsif $game_map.name.include?("Route 3") || $game_map.name.include?("Poke-Farm") || $game_map.name.include?("Fields")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/HGSS_1")
+    elsif $game_map.name.include?("Route 2") || $game_map.name.include?("Route 4") || $game_map.name.include?("Route 5") || $game_map.name.include?("Route 6")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/Route_2")
+    elsif $game_map.name.include?("Eliza") || $game_map.name.include?("Bay") ||  $game_map.name.include?("Reserve") || $game_map.name.include?("Dam") || $game_map.name.include?("Strait") || $game_map.name.include?("Lighthouse") || $game_map.name.include?("Glacier") || $game_map.name.include?("Ascent")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/Route_3")
+    elsif $game_map.name.include?("Gym") || $game_map.name.include?("Guild")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/pkmngym")
+    elsif $game_map.name.include?("Center") || $game_map.name.include?("Daycare")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/pkmncenter")
+    elsif $game_map.name.include?("Mart") || $game_map.name.include?("Store") || $game_map.name.include?("Club")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/pkmnmart")
+    elsif $game_map.name.include?("Belfry") || $game_map.name.include?("Ruins")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/HGSS_7")
+    elsif $game_map.name.include?("Rangers")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/HGSS_3")
+    elsif $game_map.name.include?("Town")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/Town_1")
+    elsif $game_map.name.include?("House") || $game_map.name.include?("Workshop") || $game_map.name.include?("Orphanage") || $game_map.name.include?("Storage")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/HGSS_4")
+    elsif $game_map.name.include?("Lab") || $game_map.name.include?("Powerplant") || $game_map.name.include?("Train to") || $game_map.name.include?("Institute")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/HGSS_8")
+    elsif $game_map.name.include?("Lake")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/Lake_1")
+    elsif $game_map.name.include?("Descent")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/HGSS_6")
+    elsif $game_map.name.include?("Cave") || $game_map.name.include?("Cavern") || $game_map.name.include?("Trench") || $game_map.name.include?("Caverns") || $game_map.name.include?("Tunnel") || $game_map.name.include?("Den") || $game_map.name.include?("Excavation") || $game_map.name.include?("Well") || $game_map.name.include?("Mount") || $game_map.name.include?("Precipice") || $game_map.name.include?("Flanks")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/Cave_1")
+    elsif $game_map.name.include?("Forest") || $game_map.name.include?("Hedge") || $game_map.name.include?("Mysterious Tower") || $game_map.name.include?("Burg")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/Forest_1")
+    elsif $game_map.name.include?("City") || $game_map.name.include?("Casino") || $game_map.name.include?("Hotel") || $game_map.name.include?("Building") || $game_map.name.include?("Station") || $game_map.name.include?("Coliseum") || $game_map.name.include?("Room")
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/City_1")
+    else
+      @sprites["Image"].bitmap = BitmapCache.load_bitmap("Graphics/Maps/Blank")
+    end
+    @sprites["Image"].x = 8
+    @sprites["Image"].y = 0 - @sprites["Image"].bitmap.height
+    @sprites["Image"].z = 99999
+    
+    @window=Window_AdvancedTextPokemon.new(name)
+    @window.x=0
+    @window.y=-@window.height
+    @window.z=99999
+    @currentmap=$game_map.map_id
+    @frames=0
   end
 
   def disposed?
@@ -19,21 +72,41 @@ class LocationWindow
 
   def dispose
     @window.dispose
+    @sprites["Image"].dispose
+    @overlay.dispose
   end
 
   def update
     return if @window.disposed?
     @window.update
-    if $game_temp.message_window_showing || @currentmap!=$game_map.map_id
+    @sprites["overlay"].update
+    if $game_temp.message_window_showing ||
+       @currentmap!=$game_map.map_id
       @window.dispose
+      @sprites["Image"].dispose
+      @overlay.dispose
       return
     end
-    if @frames>80
-      @window.y -= 4
-      @window.dispose if @window.y+@window.height<0
+    if @frames>120
+      @sprites["Image"].y-= ((@sprites["Image"].bitmap.height)/10)
+      @overlay.clear if @frames == 121
+      @overlay.dispose if @sprites["Image"].y+@sprites["Image"].bitmap.height<0
+      @window.dispose if @sprites["Image"].y+@sprites["Image"].bitmap.height<0
+      @sprites["Image"].dispose if @sprites["Image"].y+@sprites["Image"].bitmap.height<0
+    elsif $game_temp.in_menu==true
+      @sprites["Image"].y-= ((@sprites["Image"].bitmap.height)/8)
+      @overlay.clear
+      @overlay.dispose if @sprites["Image"].y+@sprites["Image"].bitmap.height<0
+      @window.dispose if @sprites["Image"].y+@sprites["Image"].bitmap.height<0
+      @sprites["Image"].dispose if @sprites["Image"].y+@sprites["Image"].bitmap.height<0
     else
-      @window.y += 4 if @window.y<0
-      @frames += 1
+      @sprites["Image"].y+= ((@sprites["Image"].bitmap.height)/10) if @sprites["Image"].y<0
+      if @frames == 14
+        textpos=[]
+        textpos.push([$game_map.name,25,((@sprites["Image"].y) + (@sprites["Image"].bitmap.height))-45,0,@baseColor,@shadowColor])
+        pbDrawTextPositions(@overlay,textpos)
+      end
+      @frames+=1
     end
   end
 end
@@ -127,9 +200,9 @@ class LightEffect_Lamp < LightEffect
     lamp = AnimatedBitmap.new("Graphics/Pictures/LE")
     @light = Sprite.new(viewport)
     @light.bitmap  = Bitmap.new(128,64)
-    src_rect = Rect.new(0, 0, 64, 64)
-    @light.bitmap.blt(0, 0, lamp.bitmap, src_rect)
-    @light.bitmap.blt(20, 0, lamp.bitmap, src_rect)
+    src_rect = Rect.new(0, 0, 64, 64) 
+    @light.bitmap.blt(0, 0, lamp.bitmap, src_rect) 
+    @light.bitmap.blt(20, 0, lamp.bitmap, src_rect) 
     @light.visible = true
     @light.z       = 1000
     lamp.dispose
@@ -195,12 +268,12 @@ class LightEffect_DayNight < LightEffect
                       $game_screen.tone.blue,
                       $game_screen.tone.gray)
     end
-  end
+  end  
 end
 
 
 
-Events.onSpritesetCreate += proc { |_sender,e|
+Events.onSpritesetCreate += proc { |sender,e|
   spriteset = e[0]      # Spriteset being created
   viewport  = e[1]      # Viewport used for tilemap and characters
   map = spriteset.map   # Map associated with the spriteset (not necessarily the current map)
@@ -241,6 +314,7 @@ end
 
 def pbBattleAnimation(bgm=nil,battletype=0,foe=nil)
   $game_temp.in_battle = true
+  handled = false
   viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
   viewport.z = 99999
   # Set up audio
@@ -593,7 +667,7 @@ def pbCaveEntranceEx(exiting)
     if exiting
       sprite.color = Color.new(255,255,255,j*increment)
     else
-      sprite.color = Color.new(0,0,0,j*increment)
+      sprite.color = Color.new(0,0,0,j*increment) 
     end
     Graphics.update
     Input.update
@@ -722,7 +796,7 @@ def pbScrollMap(direction,distance,speed)
       pbUpdateSceneMap
       break if $game_map.display_x==oldx && $game_map.display_y==oldy
       oldx = $game_map.display_x
-      oldy = $game_map.display_y
+      oldy = $game_map.display_y 
     end
   end
 end

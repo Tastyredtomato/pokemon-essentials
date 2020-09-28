@@ -6,7 +6,7 @@
 # You should change it to your file's url once you upload it.
 # NOTE: Essentials cannot handle https addresses. You must use a http address.
 #===============================================================================
-MYSTERY_GIFT_URL = "http://images1.wikia.nocookie.net/pokemonessentials/images/e/e7/MysteryGift.txt"
+MYSTERY_GIFT_URL = "http://pastebin.com/raw/1SUdEVC5"
 # MYSTERY_GIFT_URL = "http://pastebin.com/raw/w6BqqUsm"
 
 
@@ -252,6 +252,7 @@ end
 #===============================================================================
 # Called from the Continue/New Game screen.
 def pbDownloadMysteryGift(trainer)
+  pbBGMPlay("1-15 Hurry Alongloop.ogg")
   sprites={}
   viewport=Viewport.new(0,0,Graphics.width,Graphics.height)
   viewport.z=99999
@@ -334,6 +335,8 @@ def pbDownloadMysteryGift(trainer)
       end
     end
   end
+  pbBGMFade(0.8)
+  pbBGMPlay("1-02 Openingloop.ogg")
   pbFadeOutAndHide(sprites)
   pbDisposeMessageWindow(sprites["msgwindow"])
   pbDisposeSpriteHash(sprites)

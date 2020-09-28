@@ -61,7 +61,7 @@ POISON_FAINT_IN_FIELD   = false
 FISHING_AUTO_HOOK       = false
 DIVING_SURFACE_ANYWHERE = false
 NEW_BERRY_PLANTS        = true
-INFINITE_TMS            = true
+INFINITE_TMS            = false
 
 #===============================================================================
 # * The number of steps allowed before a Safari Zone game is over (0=infinite).
@@ -120,15 +120,16 @@ NUM_BADGES_BOOST_DEFENSE = 5
 NUM_BADGES_BOOST_SPATK   = 7
 NUM_BADGES_BOOST_SPDEF   = 7
 NUM_BADGES_BOOST_SPEED   = 3
-FIELD_MOVES_COUNT_BADGES = true
-BADGE_FOR_CUT            = 1
-BADGE_FOR_FLASH          = 2
-BADGE_FOR_ROCKSMASH      = 3
-BADGE_FOR_SURF           = 4
-BADGE_FOR_FLY            = 5
-BADGE_FOR_STRENGTH       = 6
-BADGE_FOR_DIVE           = 7
-BADGE_FOR_WATERFALL      = 8
+FIELD_MOVES_COUNT_BADGES = false
+BADGE_FOR_CUT            = 0 #Milldam
+BADGE_FOR_FLASH          = 4 #Industrielle
+BADGE_FOR_ROCKSMASH      = 1 #Tidal Town
+BADGE_FOR_SURF           = 1 #Tidal Town
+BADGE_FOR_FLY            = 3 #Orange Burg
+BADGE_FOR_STRENGTH       = 5 #Warbled Peak
+BADGE_FOR_DIVE           = 7 #Lumishore
+BADGE_FOR_WATERFALL      = 7 #Lumishore
+BADGE_FOR_WHIRLPOOL      = 7 #Lumishore
 
 #===============================================================================
 # * Whether a move's physical/special category depends on the move itself as in
@@ -154,7 +155,7 @@ NEWEST_BATTLE_MECHANICS   = true
 SCALED_EXP_FORMULA        = true
 SPLIT_EXP_BETWEEN_GAINERS = false
 ENABLE_CRITICAL_CAPTURES  = false
-GAIN_EXP_FOR_CAPTURE      = true
+GAIN_EXP_FOR_CAPTURE      = false
 MEGA_RINGS                = [:MEGARING, :MEGABRACELET, :MEGACUFF, :MEGACHARM]
 
 #===============================================================================
@@ -199,7 +200,7 @@ REGION_MAP_EXTRAS = [
 # * The number of boxes in Pokémon storage.
 #===============================================================================
 def pbStorageCreator
-  return _INTL("Bill")
+  return _INTL("Maxwell")
 end
 NUM_STORAGE_BOXES = 30
 
@@ -229,7 +230,7 @@ NUM_STORAGE_BOXES = 30
 #===============================================================================
 USE_CURRENT_REGION_DEX = false
 def pbDexNames; return [
-  [_INTL("Kanto Pokédex"), 0],
+  [_INTL("Netivih Pokédex"), 0],
   [_INTL("Johto Pokédex"), 1],
   _INTL("National Pokédex")
 ]; end
@@ -250,27 +251,57 @@ DEXES_WITH_OFFSETS  = []
 #      - Roaming areas specifically for this Pokémon (optional).
 #===============================================================================
 RoamingAreas = {
-  5  => [   21, 28, 31, 39, 41, 44, 47, 66, 69],
-  21 => [5,     28, 31, 39, 41, 44, 47, 66, 69],
-  28 => [5, 21,     31, 39, 41, 44, 47, 66, 69],
-  31 => [5, 21, 28,     39, 41, 44, 47, 66, 69],
-  39 => [5, 21, 28, 31,     41, 44, 47, 66, 69],
-  41 => [5, 21, 28, 31, 39,     44, 47, 66, 69],
-  44 => [5, 21, 28, 31, 39, 41,     47, 66, 69],
-  47 => [5, 21, 28, 31, 39, 41, 44,     66, 69],
-  66 => [5, 21, 28, 31, 39, 41, 44, 47,     69],
-  69 => [5, 21, 28, 31, 39, 41, 44, 47, 66    ]
+ # 5  => [   21, 28, 31, 39, 41, 44, 47, 66, 69],
+ # 21 => [5,     28, 31, 39, 41, 44, 47, 66, 69],
+ # 28 => [5, 21,     31, 39, 41, 44, 47, 66, 69],
+ # 31 => [5, 21, 28,     39, 41, 44, 47, 66, 69],
+ # 39 => [5, 21, 28, 31,     41, 44, 47, 66, 69],
+ # 41 => [5, 21, 28, 31, 39,     44, 47, 66, 69],
+ # 44 => [5, 21, 28, 31, 39, 41,     47, 66, 69],
+ # 47 => [5, 21, 28, 31, 39, 41, 44,     66, 69],
+ # 66 => [5, 21, 28, 31, 39, 41, 44, 47,     69],
+ # 69 => [5, 21, 28, 31, 39, 41, 44, 47, 66    ]
 }
 RoamingSpecies = [
-  [:LATIAS, 30, 53, 0, "Battle roaming"],
-  [:LATIOS, 30, 53, 0, "Battle roaming"],
-  [:KYOGRE, 40, 54, 2, nil, {
-    2  => [   21, 31    ],
-    21 => [2,     31, 69],
-    31 => [2, 21,     69],
-    69 => [   21, 31    ]
-  }],
-  [:ENTEI, 40, 55, 1, nil]
+ # [:LATIAS, 30, 53, 0, "Battle roaming"],
+ # [:LATIOS, 30, 53, 0, "Battle roaming"],
+ # [:KYOGRE, 40, 54, 2, nil, {
+ #   2  => [   21, 31    ],
+ #   21 => [2,     31, 69],
+ #   31 => [2, 21,     69],
+ #   69 => [   21, 31    ]
+ # }],
+ # [:ENTEI, 40, 55, 1, nil]
+ [:ENTEI, 40, 55, 1, nil, {
+       83 => [43, 86, 88],
+       43 => [83, 32, 86, 88],
+       86 => [123, 43, 83, 88],
+       88 => [83, 43, 86],
+       32 => [43,83],
+       123 => [86, 124],
+       124 => [123, 131,133],
+       131 => [124,133],
+       133 => [124,124,137],
+       137 => [133,146,148,149],
+       146 => [137,148],
+       148 => [137,149],
+       149 => [148,137]
+   }],
+   [:SUICUNE, 40, 82, 1, nil, {
+       83 => [43, 86, 88],
+       43 => [83, 32, 86, 88],
+       86 => [123, 43, 83, 88],
+       88 => [83, 43, 86],
+       32 => [43,83],
+       123 => [86, 124],
+       124 => [123, 131,133],
+       131 => [124,133],
+       133 => [124,124,137],
+       137 => [133,146,148,149],
+       146 => [137,148],
+       148 => [137,149],
+       149 => [148,137]
+    }]
 ]
 
 #===============================================================================

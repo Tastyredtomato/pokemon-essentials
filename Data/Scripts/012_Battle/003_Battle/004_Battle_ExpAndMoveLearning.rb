@@ -244,7 +244,7 @@ class PokeBattle_Battle
           oldMoveName = PBMoves.getName(pkmn.moves[forgetMove].id)
           pkmn.moves[forgetMove] = PBMove.new(newMove)   # Replaces current/total PP
           battler.moves[forgetMove] = PokeBattle_Move.pbFromPBMove(self,pkmn.moves[forgetMove]) if battler
-          pbDisplayPaused(_INTL("1, 2, and... ... ... Ta-da!"))
+          pbDisplayPaused(_INTL("1, 2, and... ... ... Poof!"))
           pbDisplayPaused(_INTL("{1} forgot how to use {2}. And...",pkmnName,oldMoveName))
           pbDisplay(_INTL("{1} learned {2}!",pkmnName,moveName)) { pbSEPlay("Pkmn move learnt") }
           battler.pbCheckFormOnMovesetChange if battler

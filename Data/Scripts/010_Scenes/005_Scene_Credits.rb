@@ -49,15 +49,79 @@ class Scene_Credits
 #Start Editing
 CREDIT=<<_END_
 
-Your credits go here.
+Scripting, game design, mapping, 
+graphic editing and writing by:
+TastyRedTomato
 
-Your credits go here.
+Beta Testers:
+Varakri<s>Aurorabeam
+Carricx<s>quish the noodle
 
-Your credits go here.
+General "PokéTracker" functionalities by:
+TastyRedTomato
 
-Your credits go here.
+"Easy Questing System" was created by:
+M3rein
 
-Your credits go here.
+"Roamtracker" was created by:
+TastyRedTomato
+
+"CardGameTournament" was created by:
+TastyRedTomato
+
+"Pokémon Import/Export" was created by:
+TastyRedTomato
+
+"Tradestone NPC" was created by:
+TastyRedTomato
+
+"PVP" was created by:
+Hansiec
+
+"Better Fast-Forward" was created by:
+Marin
+
+"Animated Title Screen" and "Neo PauseMenu" were created by:
+Luka S.J.
+
+"Nuzlocke Mode" was created by:
+JV
+
+"Randomizer Mode" was created by:
+Umbreon
+
+#"Pokémon Follower" was created by:
+#Help-14<s>zingzags
+#Rayd12smitty<s>Venom12
+#mej71
+
+"Footprints" was created by:
+Klein
+
+"Whirlpool and lava graphics" were created by:
+DormDude<s>Rayquaza-dot
+
+"Location signposts" were created by:
+LostSoulsDev
+carmaniac<s>PurpleZaffre
+
+"Booster Packs and Controls Screen" were created by:
+FL
+
+"Prevent Deactivation" was created by:
+KK20
+
+"RGSS_linker and FmodEx Audio Module" were created by:
+Nuri Yuri
+
+Special thanks to:
+Thundaga for the great tutorial videos
+The pokémon community in general
+
+and you
+
+
+
 
 {INSERTS_PLUGIN_CREDITS_DO_NOT_REMOVE}
 "Pokémon Essentials" was created by:

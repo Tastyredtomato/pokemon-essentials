@@ -12,7 +12,8 @@ class PokemonSystem
   attr_writer   :bgmvolume
   attr_writer   :sevolume
   attr_writer   :textinput
-
+  attr_accessor :screenfocus
+  
   def initialize
     @textspeed   = 1     # Text speed (0=slow, 1=normal, 2=fast)
     @battlescene = 0     # Battle effects (animations) (0=on, 1=off)
@@ -27,6 +28,7 @@ class PokemonSystem
     @bgmvolume   = 100   # Volume of background music and ME
     @sevolume    = 100   # Volume of sound effects
     @textinput   = 0     # Text input mode (0=cursor, 1=keyboard)
+    @screenfocus = 0     # screenfocus mode (0=passive, 1=active)
   end
 
   def textskin;  return @textskin || 0;    end
@@ -439,6 +441,9 @@ class PokemonOption_Scene
                playingBGM = $game_system.getPlayingBGM
                $game_system.bgm_pause
                $game_system.bgm_resume(playingBGM)
+              else #code addition by TastyRedTomato
+               $game_system.playing_bgm.volume = value
+               pbBGMPlay("1-02 Opening.mp3")
              end
            end
          }
@@ -526,6 +531,20 @@ class PokemonOption_Scene
            if value!=oldvalue
              pbSetResizeFactor($PokemonSystem.screensize)
              ObjectSpace.each_object(TilemapLoader) { |o| o.updateClass if !o.disposed? }
+           end
+         }
+       ),
+       EnumOption.new(_INTL("Screen Focus"),[_INTL("Passive"),_INTL("Active")],
+         proc { $PokemonSystem.screenfocus },
+         proc {|value|
+           oldvalue = $PokemonSystem.screenfocus
+           $PokemonSystem.screenfocus = value
+           if value!=oldvalue
+             if value == 0
+               $game_system.keep_game_active = false
+             else
+               $game_system.keep_game_active = true
+             end
            end
          }
        )

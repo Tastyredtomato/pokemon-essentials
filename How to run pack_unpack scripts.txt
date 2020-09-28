@@ -1,0 +1,3 @@
+open command prompt
+navigate to the game folder using cd filepath
+run the command "ruby scripts_combine.rb" or "ruby scripts_extract.rb"

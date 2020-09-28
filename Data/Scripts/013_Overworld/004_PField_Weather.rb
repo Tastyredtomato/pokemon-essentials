@@ -8,8 +8,10 @@ begin
     Sandstorm   = 5
     HeavyRain   = 6
     Sun = Sunny = 7
+    Shadowsky = 8
+    Flower = 9 #flowerpetals
 
-    def PBFieldWeather.maxValue; return 7; end
+    def PBFieldWeather.maxValue; return 9; end
   end
 
 rescue Exception
@@ -47,6 +49,7 @@ module RPG
       @weatherTypes[PBFieldWeather::Blizzard]  = [[], -16, 16, -4]
       @weatherTypes[PBFieldWeather::Sandstorm] = [[], -12,  4, -2]
       @weatherTypes[PBFieldWeather::Sun]       = nil
+      @weatherTypes[PBFieldWeather::Flower]    = [[],-4,8,0]
       @sprites = []
     end
 
@@ -115,6 +118,32 @@ module RPG
       @weatherTypes[PBFieldWeather::Snow][0] = [@snowBitmap1,@snowBitmap2,@snowBitmap3]
     end
 
+    def prepareFlowerBitmaps
+      if !@flowerBitmap1
+        bmwidth  = 10
+        bmheight = 10
+        @flowerBitmap1 = Bitmap.new(bmwidth,bmheight)
+        #@flowerBitmap2 = Bitmap.new(bmwidth,bmheight)
+        #@flowerBitmap3 = Bitmap.new(bmwidth,bmheight)
+        flowercolor1 = Color.new(255, 167, 192, 255)
+        flowercolor2 = Color.new(213, 106, 136, 255)
+        @flowerBitmap1.fill_rect(0,3,1,1,flowercolor1)
+        @flowerBitmap1.fill_rect(1,2,1,1,flowercolor1)
+        @flowerBitmap1.fill_rect(2,1,1,1,flowercolor1)
+        @flowerBitmap1.fill_rect(3,0,1,1,flowercolor1)
+        @flowerBitmap1.fill_rect(1,3,1,1,flowercolor2)
+        @flowerBitmap1.fill_rect(2,2,1,1,flowercolor2)
+        @flowerBitmap1.fill_rect(3,1,1,1,flowercolor2)
+        @flowerBitmap1.fill_rect(2,2,6,2,flowercolor1)
+        @flowerBitmap1.fill_rect(0,4,10,2,flowercolor1)
+        @flowerBitmap1.fill_rect(2,6,6,2,flowercolor2)
+        @flowerBitmap1.fill_rect(4,8,2,2,flowercolor2)
+        @weatherTypes[PBFieldWeather::Flower][0][0] = @flowerBitmap1
+      #  @weatherTypes[PBFieldWeather::Flower][0][1] = @flowerBitmap2
+       # @weatherTypes[PBFieldWeather::Flower][0][2] = @flowerBitmap3
+      end
+    end
+    
     def prepareBlizzardBitmaps
       return if @blizzardBitmap1
       bmWidth = 10; bmHeight = 10
@@ -211,6 +240,7 @@ module RPG
       when PBFieldWeather::Snow;                             prepareSnowBitmaps
       when PBFieldWeather::Blizzard;                         prepareBlizzardBitmaps
       when PBFieldWeather::Sandstorm;                        prepareSandstormBitmaps
+      when PBFieldWeather::Flower;                            prepareFlowerBitmaps
       end
       weatherBitmaps = (@type==PBFieldWeather::None || @type==PBFieldWeather::Sun) ? nil : @weatherTypes[@type][0]
       ensureSprites
@@ -233,6 +263,10 @@ module RPG
       when PBFieldWeather::Snow;      @viewport.tone.set(   @max/2,    @max/2,    @max/2,  0)
       when PBFieldWeather::Blizzard;  @viewport.tone.set( @max*3/4,  @max*3/4,   max*3/4,  0)
       when PBFieldWeather::Sandstorm; @viewport.tone.set(   @max/2,         0,   -@max/2,  0)
+      when PBFieldWeather::Flower
+        unless @sun==@max || @sun==-@max
+          @sun = @max
+        end
       when PBFieldWeather::Sun
         @sun = @max if @sun!=@max && @sun!=-@max
         @sun = -@sun if @sunValue>@max || @sunValue<0
@@ -252,7 +286,7 @@ module RPG
         sprite = @sprites[i]
         break if sprite==nil
         sprite.x += @weatherTypes[@type][1]
-        sprite.x += [2,0,0,-2][rand(4)] if @type==PBFieldWeather::Snow || @type==PBFieldWeather::Blizzard
+        sprite.x += [2,0,0,-2][rand(4)] if @type==PBFieldWeather::Snow || @type==PBFieldWeather::Blizzard || @type==PBFieldWeather::Flower
         sprite.y += @weatherTypes[@type][2]
         sprite.opacity += @weatherTypes[@type][3]
         # Check if sprite is off-screen; if so, reset it
@@ -260,6 +294,15 @@ module RPG
         y = sprite.y-@oy
         nomWidth  = Graphics.width
         nomHeight = Graphics.height
+        if @type==PBFieldWeather::Flower
+            if @info[i] < 20
+              sprite.x -= 2
+                else
+              sprite.x += 2
+            end
+            @info[i] = (@info[i] + 1) % 50
+            sprite.y -= 0.99
+        end
         if sprite.opacity<64 || x<-50 || x>nomWidth+128 || y<-300 || y>nomHeight+20
           sprite.x = rand(nomWidth+150)-50+@ox
           sprite.y = rand(nomHeight+150)-200+@oy

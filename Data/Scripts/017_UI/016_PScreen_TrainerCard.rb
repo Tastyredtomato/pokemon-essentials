@@ -66,6 +66,7 @@ class PokemonTrainerCard_Scene
     x = 72
     region = pbGetCurrentRegion(0) # Get the current region
     imagePositions = []
+    imagePositions2 = []
     for i in 0...8
       if $Trainer.badges[i+region*8]
         imagePositions.push(["Graphics/Pictures/Trainer Card/icon_badges",x,310,i*32,region*32,32,32])
@@ -73,6 +74,27 @@ class PokemonTrainerCard_Scene
       x += 48
     end
     pbDrawImagePositions(overlay,imagePositions)
+    
+    
+    #ElizaCup
+    if $game_switches[67] == true
+      imagePositions2.push(["Graphics/Pictures/Trainer Card/icon_cups",312,262,0,0,32,32])
+    end
+    pbDrawImagePositions(overlay,imagePositions2)
+    #--------
+    #CardCup
+    if $game_switches[84] == true
+      imagePositions2.push(["Graphics/Pictures/Trainer Card/icon_cups",344,262,32,0,64,32])
+    end
+    pbDrawImagePositions(overlay,imagePositions2)
+    #--------
+    #BugCup
+    if $game_switches[88] == true
+      imagePositions2.push(["Graphics/Pictures/Trainer Card/icon_cups",344,262,32,0,96,32])
+    end
+    pbDrawImagePositions(overlay,imagePositions2)
+    #--------
+    
   end
 
   def pbTrainerCard

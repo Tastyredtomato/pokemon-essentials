@@ -8,7 +8,7 @@ class PokegearButton < SpriteWrapper
     @image = command[0]
     @name  = command[1]
     @selected = false
-    if $Trainer.female? && pbResolveBitmap(sprintf("Graphics/Pictures/Pokegear/icon_button_f"))
+    if $Trainer.isFemale? && pbResolveBitmap(sprintf("Graphics/Pictures/Pokegear/icon_button_f"))
       @button = AnimatedBitmap.new("Graphics/Pictures/Pokegear/icon_button_f")
     else
       @button = AnimatedBitmap.new("Graphics/Pictures/Pokegear/icon_button")
@@ -43,7 +43,7 @@ class PokegearButton < SpriteWrapper
     ]
     pbDrawTextPositions(self.bitmap,textpos)
     imagepos = [
-       [sprintf("Graphics/Pictures/Pokegear/icon_"+@image),18,10]
+       [sprintf("Graphics/Pictures/Pokegear/icon_"+@image),18,10,0,0,-1,-1],
     ]
     pbDrawImagePositions(self.bitmap,imagepos)
   end
@@ -66,7 +66,7 @@ class PokemonPokegear_Scene
     @viewport.z = 99999
     @sprites = {}
     @sprites["background"] = IconSprite.new(0,0,@viewport)
-    if $Trainer.female? && pbResolveBitmap(sprintf("Graphics/Pictures/Pokegear/bg_f"))
+    if $Trainer.isFemale? && pbResolveBitmap(sprintf("Graphics/Pictures/Pokegear/bg_f"))
       @sprites["background"].setBitmap("Graphics/Pictures/Pokegear/bg_f")
     else
       @sprites["background"].setBitmap("Graphics/Pictures/Pokegear/bg")
@@ -85,20 +85,18 @@ class PokemonPokegear_Scene
       Input.update
       pbUpdate
       if Input.trigger?(Input::B)
-        pbPlayCloseMenuSE
         break
       elsif Input.trigger?(Input::C)
-        pbPlayDecisionSE
         ret = @index
         break
       elsif Input.trigger?(Input::UP)
-        pbPlayCursorSE if @commands.length>1
         @index -= 1
         @index = @commands.length-1 if @index<0
-      elsif Input.trigger?(Input::DOWN)
         pbPlayCursorSE if @commands.length>1
+      elsif Input.trigger?(Input::DOWN)
         @index += 1
         @index = 0 if @index>=@commands.length
+        pbPlayCursorSE if @commands.length>1
       end
     end
     return ret
@@ -123,27 +121,53 @@ class PokemonPokegearScreen
     cmdMap     = -1
     cmdPhone   = -1
     cmdJukebox = -1
+    cmdTracker = -1
+    cmdDaycare = -1
     commands[cmdMap = commands.length]     = ["map",_INTL("Map")]
     if $PokemonGlobal.phoneNumbers && $PokemonGlobal.phoneNumbers.length>0
       commands[cmdPhone = commands.length] = ["phone",_INTL("Phone")]
+    end
+    if $game_switches[72] == true
+      commands[cmdTracker = commands.length]     = ["tracker",_INTL("PokéTracker")]
+    end
+    if $game_switches[73] == true
+      commands[cmdDaycare = commands.length]     = ["daycare",_INTL("Daycare")]
     end
     commands[cmdJukebox = commands.length] = ["jukebox",_INTL("Jukebox")]
     @scene.pbStartScene(commands)
     loop do
       cmd = @scene.pbScene
       if cmd<0
+        pbPlayCancelSE
         break
       elsif cmdMap>=0 && cmd==cmdMap
+        pbPlayDecisionSE
         pbShowMap(-1,false)
       elsif cmdPhone>=0 && cmd==cmdPhone
-        pbFadeOutIn {
+        pbPlayDecisionSE
+        pbFadeOutIn(99999){
           PokemonPhoneScene.new.start
         }
       elsif cmdJukebox>=0 && cmd==cmdJukebox
-        pbFadeOutIn {
+        pbPlayDecisionSE
+        pbFadeOutIn(99999){
           scene = PokemonJukebox_Scene.new
           screen = PokemonJukeboxScreen.new(scene)
           screen.pbStartScreen
+        }
+      elsif cmdTracker>=0 && cmd==cmdTracker
+        pbPlayDecisionSE
+        pbFadeOutIn(99999){
+         scene = PokemonTracker_Scene.new
+          screen = PokemonTrackerScreen.new(scene)
+          screen.pbStartScreen
+        }
+      elsif cmdDaycare>=0 && cmd==cmdDaycare
+        pbPlayDecisionSE
+        pbFadeOutIn(99999){
+         scene=DayCareCheckerScene.new
+         screen=DayCareChecker.new(scene)
+         screen.startScreen
         }
       end
     end

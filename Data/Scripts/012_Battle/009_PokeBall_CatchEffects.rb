@@ -24,7 +24,9 @@ $BallTypes = {
   22 => :MOONBALL,
   23 => :SPORTBALL,
   24 => :DREAMBALL,
-  25 => :BEASTBALL
+  25 => :BEASTBALL,
+  26 => :GSBALL,
+  27 => :SHINYBALL
 }
 
 def pbBallTypeToItem(balltype)
@@ -241,3 +243,21 @@ BallHandlers::OnCatch.add(:HEALBALL,proc { |ball,battle,pkmn|
 BallHandlers::OnCatch.add(:FRIENDBALL,proc { |ball,battle,pkmn|
   pkmn.happiness = 200
 })
+
+
+#===============================================================================
+# Custom
+#===============================================================================
+
+BallHandlers::ModifyCatchRate.add(:GSBALL,proc{|ball,catchRate,battle,battler|
+   if isConst?(battler.species,PBSpecies,:CELEBI)
+     catchRate*=8
+   end
+   next [catchRate,255].min
+})
+
+BallHandlers::ModifyCatchRate.add(:SHINYBALL,proc{|ball,catchRate,battle,battler|
+   catchRate*=4 if battler.isShiny?
+   next catchRate
+})
+

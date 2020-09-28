@@ -1,40 +1,120 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 # Route 5 (41) - Route 4 (40)
-41,N,0,40,S,0
+41,North,0,40,South,0
 # Route 5 (41) - Route 6 (45)
-41,S,6,45,N,0
+41,South,6,45,North,0
 # Route 6 (44) - Route 1 (5)
-44,S,43,5,N,0
+44,South,43,5,North,0
 # Safari Zone (66) - Route 1 (5)
-66,N,18,5,S,0
+66,North,18,5,South,0
 # Cedolan City (7) - Route 1 (5)
-7,S,0,5,N,2
+7,South,0,5,North,2
 # Lappet Town (2) - Route 1 (5)
-2,N,0,5,S,4
+2,North,0,5,South,4
 # Cedolan City (7) - Route 6 (44)
-7,W,5,44,E,0
+7,West,5,44,East,0
 # Lappet Town (2) - Safari Zone (66)
-2,W,0,66,E,0
+2,West,0,66,East,0
 # Route 8 (69) - Safari Zone (66)
-69,N,0,66,S,10
+69,North,0,66,South,10
 # Ingido Plateau (35) - Route 4 (39)
-35,W,11,39,E,0
+35,West,11,39,East,0
 # Cedolan City (7) - Lerucean Town (23)
-7,E,0,23,W,78
+7,East,0,23,West,78
 # Route 3 (31) - Lerucean Town (23)
-31,S,32,23,N,0
+31,South,32,23,North,0
 # Route 2 (21) - Lerucean Town (23)
-21,E,0,23,W,1
+21,East,0,23,West,1
 # Route 7 (47) - Cedolan City (7)
-47,W,0,7,E,0
+47,West,0,7,East,0
 # Route 2 (21) - Cedolan City (7)
-21,S,0,7,N,21
+21,South,0,7,North,21
 # Route 3 (31) - Ingido Plateau (35)
-31,W,0,35,E,10
+31,West,0,35,East,10
 # Route 8 (69) - Lappet Town (2)
-69,N,12,2,S,0
+69,North,12,2,South,0
 # Route 7 (47) - Battle Frontier (52)
-47,E,8,52,W,0
+47,East,8,52,West,0
 # Route 2 (21) - Route 7 (47)
-21,E,77,47,W,0
+21,East,77,47,West,0
+# Bell Town (78) - Route 3 (88)
+78,West,0,88,East,0
+# Lumishore City (90) - Route 3 (88)
+90,East,10,88,West,0
+# Route 2 (86) - Bell Town (78)
+86,West,32,78,East,0
+# Route 1 (43) - Bell Town (78)
+43,North,0,78,South,9
+# Route 2 (86) - Milldam City (102)
+86,North,0,102,South,9
+# Route 1 (43) - Lyre Town (32)
+43,South,0,32,North,18
+# Polder Reserve - Section C (202) - Polder Reserve - Section A (119)
+202,North,60,119,South,0
+# Polder Reserve - Section B (120) - Polder Reserve - Section A (119)
+120,North,0,119,South,0
+# Polder Reserve - Section B (120) - Polder Reserve - Section C (202)
+120,West,0,202,East,0
+# The Great Dam (200) - Strait of Whorls (205)
+200,North,0,205,South,0
+# Canalis City (137) - Yssel Lake (148)
+137,North,18,148,South,0
+# Canalis Train Station (143) - Yssel Lake (148)
+143,North,0,148,South,50
+# Yssel Lake (149) - Yssel Lake (148)
+149,East,0,148,West,0
+# Tidal Town (150) - Yssel Lake (148)
+150,South,65,148,North,0
+# Canalis Train Station (143) - Canalis City (137)
+143,West,0,137,East,0
+# Yssel Lake (149) - Canalis City (137)
+149,South,47,137,North,0
+# Route 4 (133) - Canalis City (137)
+133,North,0,137,South,3
+# Route 5 (188) - Floralia Town (192)
+188,East,42,192,West,0
+# Floral Fields (197) - Floralia Town (192)
+197,West,3,192,East,0
+# Route 6 (208) - Floralia Town (192)
+208,North,2,192,South,0
+# Yssel Lake (149) - Canalis Train Station (143)
+149,South,115,143,North,0
+# Route 4 (133) - Canalis Train Station (143)
+133,North,65,143,South,0
+# Route 4 (133) - Orange Burg (176)
+133,South,0,176,North,0
+# Route 5 (188) - Orange Burg (176)
+188,North,0,176,South,0
+# Orange Burg Train Station (184) - Orange Burg (176)
+184,West,6,176,East,0
+# Hedge Point (124) - Orange Burg (176)
+124,East,67,176,West,0
+# Hedge Weald (131) - Orange Burg (176)
+131,East,115,176,West,0
+# Route 6 (208) - Orange Burg (176)
+208,West,0,176,East,122
+# Tidal Town (150) - Yssel Lake (149)
+150,South,0,149,North,0
+# Orange Burg Train Station (184) - Route 4 (133)
+184,West,0,133,East,114
+# Hedge Point (124) - Route 4 (133)
+124,East,0,133,West,53
+# Hedge Weald (131) - Route 4 (133)
+131,East,0,133,West,5
+# Route 6 (208) - Route 4 (133)
+208,West,0,133,East,242
+# Hedge Point (124) - Route 5 (188)
+124,East,107,188,West,0
+# Hedge Weald (131) - Route 5 (188)
+131,East,155,188,West,0
+# Mysterious Tower (207) - Hedge Point (124)
+207,North,6,124,South,0
+# Route 6 (208) - Floral Fields (197)
+208,East,0,197,West,43
+# Ashen Flanks (232) - Poké-Springs (236)
+232,West,10,236,East,0
+# Route 7 (233) - Poké-Springs (236)
+233,North,0,236,South,0
+# Route 7 (233) - Ashen Flanks (232)
+233,North,20,232,South,0

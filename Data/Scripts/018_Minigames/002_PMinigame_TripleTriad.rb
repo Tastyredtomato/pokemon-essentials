@@ -201,7 +201,7 @@ class TriadScene
     @sprites["score"] = Sprite.new(@viewport)
     @sprites["score"].bitmap = BitmapWrapper.new(Graphics.width,Graphics.height)
     pbSetSystemFont(@sprites["score"].bitmap)
-    pbBGMPlay("Triple Triad")
+    pbBGMPlay("Triple Triadloop")
     # Fade in all sprites
     pbFadeInAndShow(@sprites) { pbUpdate }
   end

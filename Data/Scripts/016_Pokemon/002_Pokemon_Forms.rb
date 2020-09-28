@@ -311,7 +311,7 @@ MultipleForms.register(:ROTOM,{
         if newMove && newMove>0
           newMoveName = PBMoves.getName(newMove)
           pkmn.moves[idxMoveToReplace].id = newMove
-          pbMessage(_INTL("1,\\wt[16] 2, and\\wt[16]...\\wt[16] ...\\wt[16] ... Ta-da!\\se[Battle ball drop]\1"))
+          pbMessage(_INTL("1,\\wt[16] 2, and\\wt[16]...\\wt[16] ...\\wt[16] ... Poof!\\se[Battle ball drop]\1"))
           pbMessage(_INTL("{1} forgot how to use {2}.\\nAnd...\1",pkmn.name,oldMoveName))
           pbMessage(_INTL("\\se[]{1} learned {2}!\\se[Pkmn move learnt]",pkmn.name,newMoveName))
         else
@@ -668,6 +668,13 @@ MultipleForms.register(:NECROZMA,{
       end
     end
   }
+})
+
+MultipleForms.register(:MEWTWO,{
+"getForm"=>proc{|pokemon|
+   next 3  if isConst?(pokemon.item,PBItems,:POWERDAMPENER)
+   next 0
+}
 })
 
 #===============================================================================

@@ -252,6 +252,7 @@ class PokemonLoadScreen
   end
 
   def pbStartLoadScreen
+    pbBGMPlay("1-02 Openingloop.ogg")
     $PokemonTemp   = PokemonTemp.new
     $game_temp     = Game_Temp.new
     $game_system   = Game_System.new
@@ -321,6 +322,7 @@ class PokemonLoadScreen
       commands[cmdNewGame = commands.length]     = _INTL("New Game")
     end
     commands[cmdOption = commands.length]        = _INTL("Options")
+    commands[cmdControls = commands.length]        = _INTL("Controls")
     commands[cmdLanguage = commands.length]      = _INTL("Language") if LANGUAGES.length>=2
     commands[cmdDebug = commands.length]         = _INTL("Debug") if $DEBUG
     commands[cmdQuit = commands.length]          = _INTL("Quit Game")
@@ -449,6 +451,12 @@ class PokemonLoadScreen
           screen = PokemonOptionScreen.new(scene)
           screen.pbStartScreen(true)
         }
+      elsif cmdControls>=0 && command==cmdControls
+         scene=PokemonControlsScene.new
+         screen=PokemonControls.new(scene)
+         pbFadeOutIn(99999) {
+         screen.pbStartScreen
+       }
       elsif cmdLanguage>=0 && command==cmdLanguage
         pbPlayDecisionSE
         @scene.pbEndScene
@@ -495,7 +503,8 @@ module FontInstaller
      'pkmnems.ttf',
      'pkmnrs.ttf',
      'pkmndp.ttf',
-     'pkmnfl.ttf'
+     'pkmnfl.ttf',
+     'Unown.ttf'
   ]
   # names (not filenames) of fonts to be installed
   Names = [
@@ -504,7 +513,8 @@ module FontInstaller
     'Power Green Small',
     'Power Red and Blue',
     'Power Clear',
-    'Power Red and Green'
+    'Power Red and Green',
+    'Unown'
   ]
   # whether to notify player (via pop-up message) that fonts were installed
   Notify = true

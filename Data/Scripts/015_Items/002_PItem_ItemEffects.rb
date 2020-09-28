@@ -40,6 +40,30 @@ ItemHandlers::UseFromBag.add(:BICYCLE,proc { |item|
 
 ItemHandlers::UseFromBag.copy(:BICYCLE,:MACHBIKE,:ACROBIKE)
 
+ItemHandlers::UseFromBag.add(:RANGEROUTFIT,proc{|item|
+  $Trainer.outfit=1
+  Kernel.pbMessage(_INTL("You put on the Ranger Uniform."))
+  next 0
+})
+   
+ItemHandlers::UseFromBag.add(:TRAINEROUTFIT,proc{|item|
+  $Trainer.outfit=0
+  Kernel.pbMessage(_INTL("You put on the Trainer Outfit."))
+  next 0
+})
+
+ItemHandlers::UseFromBag.add(:ASSISTANTOUTFIT,proc{|item|
+  $Trainer.outfit=2
+  Kernel.pbMessage(_INTL("You put on the Assistant Outfit."))
+  next 0
+})
+
+ItemHandlers::UseFromBag.add(:ROCKETOUTFIT,proc{|item|
+  $Trainer.outfit=3
+  Kernel.pbMessage(_INTL("You put on the Rocket Outfit."))
+  next 0
+})
+
 ItemHandlers::UseFromBag.add(:OLDROD,proc { |item|
   terrain = pbFacingTerrainTag
   notCliff = $game_map.passable?($game_player.x,$game_player.y,$game_player.direction,$game_player)
@@ -58,6 +82,13 @@ ItemHandlers::UseFromBag.add(:ITEMFINDER,proc { |item|
 })
 
 ItemHandlers::UseFromBag.copy(:ITEMFINDER,:DOWSINGMCHN,:DOWSINGMACHINE)
+
+
+ItemHandlers::UseFromBag.add(:CARDBINDER,proc{|item|
+   pbTriadList
+   next 1
+})
+
 
 #===============================================================================
 # ConfirmUseInField handlers
@@ -336,6 +367,23 @@ ItemHandlers::UseInField.add(:EXPALLOFF,proc { |item|
   $PokemonBag.pbChangeItem(:EXPALLOFF,:EXPALL)
   pbMessage(_INTL("The Exp Share was turned on."))
   next 1
+})
+
+ItemHandlers::UseInField.add(:LOSTCOINS,proc{|item|
+    if $PokemonGlobal.coins==MAX_COINS
+    Kernel.pbMessage(_INTL("Your Coin Case is full!"))
+    next 1
+    end
+    if $PokemonBag.pbHasItem?(:COINCASE)
+       value = rand(3)+1
+       $PokemonGlobal.coins+=value
+       Kernel.pbMessage(_INTL("You placed {1} coins in the Coin Case.",value))
+       
+       next 3
+     else
+       Kernel.pbMessage(_INTL("You need a Coin Case to store these."))
+       next 1
+    end
 })
 
 #===============================================================================
