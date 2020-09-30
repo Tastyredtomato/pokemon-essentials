@@ -85,6 +85,18 @@ Color = Black
 Pokedex = It forms a group of Rattata, which it assumes command of. Each group has its own territory, and disputes over food happen often.
 WildItemUncommon = PECHABERRY
 #-------------------------------
+[PIKACHU,2]
+FormName = Surfing
+Type1 = ELECTRIC
+Abilities = SWIFTSWIM,DAMP
+HiddenAbility = SURGESURFER
+Moves = 0,SURF,1,TAILWHIP,1,THUNDERSHOCK,5,GROWL,7,PLAYNICE,10,QUICKATTACK,13,ELECTROBALL,18,THUNDERWAVE,21,FEINT,23,DOUBLETEAM,26,SPARK,29,NUZZLE,34,DISCHARGE,37,SLAM,42,THUNDERBOLT,45,AGILITY,50,WILDCHARGE,53,LIGHTSCREEN,58,THUNDER
+Height = 0.5
+Weight = 7.0
+Pokedex = This rare Pikachu variant surfs the ocean waves, using its tail as a paddle.
+WildItemUncommon = SURFITEM
+Evolutions = RAICHU,Item,THUNDERSTONE
+#-------------------------------
 [RAICHU,1]
 FormName = Alolan
 Type1 = ELECTRIC
