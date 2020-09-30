@@ -103,6 +103,10 @@ QUESTS = [
    Quest.new(30, "Ranger Delivery: Orange Burg", "Bring the supplies to the Orange Burg Rangers.","Pokémon Rangers","NPC 30","Milldam", :GREEN),
    Quest.new(31, "Ranger Delivery: Sulfur City", "Bring the supplies to the Sulfur City Rangers.","Pokémon Rangers","NPC 30","Orange Burg", :GREEN),
    Quest.new(32, "Ranger Delivery: Industrielle", "Bring the supplies to the Industrielle Rangers.","Pokémon Rangers","NPC 30","Sulfur City", :GREEN),
+   Quest.new(33, "Flowers for Pokemon", "Place the flowers by the war memorial on Route 2.","Old man","NPC 18","Bell Town", :BLUE),
+   Quest.new(34, "Flowers for Pokemon: Part 2", "Place the flower by the grave in the Hedge Weald.","Dead Pokémon","200","Trench Grove", :BLUE),
+   Quest.new(35, "River Blockage", "Clear the river in Hedge Weald.","Pokémon Rangers","NPC 30","Ranger Outpost", :GREEN),
+   Quest.new(36, "Unown Language", "Examine the mysterious walls in the Bell Town Ruins, then report back to the assistant or prof Poplar.", "Professor Poplar", "phone001", "Poplar's Lab", :WHITE),
    ]
 
 

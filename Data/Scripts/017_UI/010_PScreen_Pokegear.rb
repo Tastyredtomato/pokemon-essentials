@@ -123,6 +123,7 @@ class PokemonPokegearScreen
     cmdJukebox = -1
     cmdTracker = -1
     cmdDaycare = -1
+    cmdUnownDex = -1
     commands[cmdMap = commands.length]     = ["map",_INTL("Map")]
     if $PokemonGlobal.phoneNumbers && $PokemonGlobal.phoneNumbers.length>0
       commands[cmdPhone = commands.length] = ["phone",_INTL("Phone")]
@@ -132,6 +133,9 @@ class PokemonPokegearScreen
     end
     if $game_switches[73] == true
       commands[cmdDaycare = commands.length]     = ["daycare",_INTL("Daycare")]
+    end
+    if $game_switches[92] == true
+    commands[cmdUnownDex = commands.length]     = ["unown",_INTL("Unown Report")]
     end
     commands[cmdJukebox = commands.length] = ["jukebox",_INTL("Jukebox")]
     @scene.pbStartScene(commands)
@@ -168,6 +172,13 @@ class PokemonPokegearScreen
          scene=DayCareCheckerScene.new
          screen=DayCareChecker.new(scene)
          screen.startScreen
+        }
+      elsif cmdUnownDex>=0 && cmd==cmdUnownDex
+        pbPlayDecisionSE
+        pbFadeOutIn(99999){
+         scene=UnownDex_Scene.new
+         screen=UnownDexScreen.new(scene)
+         screen.pbStartScreen
         }
       end
     end
