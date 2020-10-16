@@ -116,5 +116,9 @@
 232,West,10,236,East,0
 # Route 7 (233) - Poké-Springs (236)
 233,North,0,236,South,0
+# Industrielle City (239) - Poké-Springs (236)
+239,East,0,236,West,2
 # Route 7 (233) - Ashen Flanks (232)
 233,North,20,232,South,0
+# Industrielle City (239) - Route 7 (233)
+239,East,13,233,West,0

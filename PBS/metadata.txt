@@ -1,56 +1,57 @@
-﻿#-------------------------------
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
 [000]
-PlayerA=POKEMONTRAINER_Red,trchar000,boy_bike,boy_surf,boy_run,boy_surf,boy_fish_offset,xxx
-PlayerB=POKEMONTRAINER_Leaf,trchar001,girl_bike,girl_surf,girl_run,girl_surf,girl_fish_offset,xxx
-TrainerVictoryME=1-21 Victory Against Trainer!loop.ogg
-WildVictoryME=1-10 Victory Against Wild Pokémon!loop.ogg
-TrainerBattleBGM=1-20 Battle! Trainerloop.ogg
-SurfBGM=2-10 Surfloop.ogg
-BicycleBGM=1-50 Bicycleloop.ogg
-Home=33,8,4,8
-WildBattleBGM=1-09 Battle! Wild Pokémonloop.ogg
+PlayerA = POKEMONTRAINER_Red,trchar000,boy_bike,boy_surf,boy_run,boy_surf,boy_fish_offset,xxx
+PlayerB = POKEMONTRAINER_Leaf,trchar001,girl_bike,girl_surf,girl_run,girl_surf,girl_fish_offset,xxx
+TrainerVictoryME = 1-21 Victory Against Trainer!loop.ogg
+WildVictoryME = 1-10 Victory Against Wild Pokémon!loop.ogg
+TrainerBattleBGM = 1-20 Battle! Trainerloop.ogg
+SurfBGM = 2-10 Surfloop.ogg
+BicycleBGM = 1-50 Bicycleloop.ogg
+Home = 33,8,4,8
+WildBattleBGM = 1-09 Battle! Wild Pokémonloop.ogg
 #-------------------------------
 [001]
 # Intro
 #-------------------------------
 [002]
 # Lappet Town
-Outdoor=true
-ShowArea=true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [003]
 # \PN's house
-BattleBack=IndoorB
-HealingSpot=2,8,8
+BattleBack = IndoorB
+HealingSpot = 2,8,8
 #-------------------------------
 [004]
 # Pokémon Lab
-ShowArea=false
+ShowArea = false
 #-------------------------------
 [005]
 # Route 1
-Outdoor=true
-ShowArea=true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [006]
 # Kurt's house
 #-------------------------------
 [007]
 # Cedolan City
-MapSize=2,11
-Outdoor=true
-ShowArea=true
+MapSize = 2,11
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [008]
 # Daisy's house
 #-------------------------------
 [009]
 # Cedolan City Poké Center
-HealingSpot=8,17,11
+HealingSpot = 8,17,11
 #-------------------------------
 [010]
 # Cedolan Gym
-BattleBack=IndoorB
+BattleBack = IndoorB
 #-------------------------------
 [011]
 # Pokémon Institute
@@ -84,19 +85,19 @@ BattleBack=IndoorB
 #-------------------------------
 [021]
 # Route 2
-MapSize=1,11
-Weather=Rain,50
-Outdoor=true
-ShowArea=true
+MapSize = 1,11
+Weather = Rain,50
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [023]
 # Lerucean Town
-Outdoor=true
-ShowArea=true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [024]
 # Lerucean Town Poké Center
-HealingSpot=23,11,15
+HealingSpot = 23,11,15
 #-------------------------------
 [025]
 # Lerucean Town Mart
@@ -109,151 +110,151 @@ HealingSpot=23,11,15
 #-------------------------------
 [028]
 # Natural Park
-BattleBack=Forest
-Outdoor=true
-ShowArea=true
+BattleBack = Forest
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [029]
 # Natural Park Entrance
-Bicycle=true
+Bicycle = true
 #-------------------------------
 [030]
 # Natural Park Pavillion
 #-------------------------------
 [031]
 # Route 3
-MapSize=2,1101
-Outdoor=true
-ShowArea=true
+MapSize = 2,1101
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [032]
 # Lyre Town
-Weather=Rain,20
-Bicycle=true
-MapPosition=0,9,15
-Outdoor=true
-ShowArea=true
+Weather = Rain,20
+Bicycle = true
+MapPosition = 0,9,15
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [033]
 # \PN's house
-MapPosition=0,9,15
-HealingSpot=32,19,12
-ShowArea=true
+MapPosition = 0,9,15
+HealingSpot = 32,19,12
+ShowArea = true
 #-------------------------------
 [034]
 # Ice Cave
-BattleBack=IndoorC
-Bicycle=true
+BattleBack = IndoorC
+Bicycle = true
 #-------------------------------
 [035]
 # Ingido Plateau
-Outdoor=true
-ShowArea=true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [036]
 # Pokémon League
-HealingSpot=35,17,7
+HealingSpot = 35,17,7
 #-------------------------------
 [037]
 # Pokémon League
-BattleBack=EliteA
+BattleBack = EliteA
 #-------------------------------
 [038]
 # Hall of Fame
 #-------------------------------
 [039]
 # Route 4
-MapSize=2,11
-Outdoor=true
-ShowArea=true
+MapSize = 2,11
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [040]
 # Route 4
-Outdoor=true
-BicycleAlways=true
-ShowArea=true
+Outdoor = true
+BicycleAlways = true
+ShowArea = true
 #-------------------------------
 [041]
 # Route 5
-MapSize=1,111
-Outdoor=true
-BicycleAlways=true
-ShowArea=true
+MapSize = 1,111
+Outdoor = true
+BicycleAlways = true
+ShowArea = true
 #-------------------------------
 [042]
 # Poplar's Lab
-MapPosition=0,9,15
+MapPosition = 0,9,15
 #-------------------------------
 [043]
 # Route 1
-Weather=Rain,30
-Bicycle=true
-MapPosition=0,9,14
-Outdoor=true
-ShowArea=true
+Weather = Rain,30
+Bicycle = true
+MapPosition = 0,9,14
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [044]
 # Route 6
-MapSize=2,11
-Outdoor=true
-ShowArea=true
+MapSize = 2,11
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [045]
 # Route 6
-Outdoor=true
-BicycleAlways=true
-ShowArea=true
+Outdoor = true
+BicycleAlways = true
+ShowArea = true
 #-------------------------------
 [046]
 # Cycling Road gate
-Bicycle=true
+Bicycle = true
 #-------------------------------
 [047]
 # Route 7
-MapSize=2,11
-BattleBack=Mountain
-Weather=Rain,0
-Outdoor=true
-ShowArea=true
+MapSize = 2,11
+BattleBack = Mountain
+Weather = Rain,0
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [048]
 # Jubilee's house
-MapPosition=0,9,15
+MapPosition = 0,9,15
 #-------------------------------
 [049]
 # Rock Cave
-Bicycle=true
+Bicycle = true
 #-------------------------------
 [050]
 # Rock Cave
-BattleBack=CaveDark
-Bicycle=true
-DarkMap=true
+BattleBack = CaveDark
+Bicycle = true
+DarkMap = true
 #-------------------------------
 [051]
 # Dungeon
-Bicycle=true
-Dungeon=true
+Bicycle = true
+Dungeon = true
 #-------------------------------
 [052]
 # Battle Frontier
-Outdoor=true
-ShowArea=true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [053]
 # Battle Frontier Poké Center
-HealingSpot=52,17,14
+HealingSpot = 52,17,14
 #-------------------------------
 [054]
 # Battle Frontier Mart
 #-------------------------------
 [055]
 # Battle Tower
-HealingSpot=52,30,10
+HealingSpot = 52,30,10
 #-------------------------------
 [056]
 # Battle Tower arena
-BattleBack=EliteA
+BattleBack = EliteA
 #-------------------------------
 [057]
 # Stadium Cup lobby
@@ -263,14 +264,14 @@ BattleBack=EliteA
 #-------------------------------
 [059]
 # Battle Palace arena
-BattleBack=EliteD
+BattleBack = EliteD
 #-------------------------------
 [060]
 # Battle Arena
 #-------------------------------
 [061]
 # Battle Arena arena
-BattleBack=EliteB
+BattleBack = EliteB
 #-------------------------------
 [062]
 # Battle Factory
@@ -280,31 +281,31 @@ BattleBack=EliteB
 #-------------------------------
 [064]
 # Battle Factory arena
-BattleBack=EliteC
+BattleBack = EliteC
 #-------------------------------
 [065]
 # Battle Factory corridor
 #-------------------------------
 [066]
 # Safari Zone
-Outdoor=true
-ShowArea=true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [067]
 # Safari Zone gate
 #-------------------------------
 [068]
 # Safari Zone
-BattleBack=Forest
-SafariMap=true
-Outdoor=true
-ShowArea=true
+BattleBack = Forest
+SafariMap = true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [069]
 # Route 8
-DiveMap=70
-Outdoor=true
-ShowArea=true
+DiveMap = 70
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [070]
 # Underwater
@@ -314,885 +315,885 @@ ShowArea=true
 #-------------------------------
 [072]
 # Berth Island
-Weather=Storm,50
-Outdoor=true
-ShowArea=true
+Weather = Storm,50
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [073]
 # Faraday Island
-Outdoor=true
-ShowArea=true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [074]
 # Cycling Road gate
-Bicycle=true
+Bicycle = true
 #-------------------------------
 [075]
 # Tiall Region
-Outdoor=true
+Outdoor = true
 #-------------------------------
 [076]
 # Old Couple's House
-MapPosition=0,9,15
+MapPosition = 0,9,15
 #-------------------------------
 [077]
 # Strongman's House
-MapPosition=0,9,14
-ShowArea=true
+MapPosition = 0,9,14
+ShowArea = true
 #-------------------------------
 [078]
 # Bell Town
-Weather=Rain,40
-Bicycle=true
-MapPosition=0,9,13
-Outdoor=true
-ShowArea=true
+Weather = Rain,40
+Bicycle = true
+MapPosition = 0,9,13
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [079]
 # Bell Town Poké Center
-MapPosition=0,9,13
-HealingSpot=78,38,32
-ShowArea=true
+MapPosition = 0,9,13
+HealingSpot = 78,38,32
+ShowArea = true
 #-------------------------------
 [080]
 # Bell Town Mart
-MapPosition=0,9,13
-ShowArea=true
+MapPosition = 0,9,13
+ShowArea = true
 #-------------------------------
 [081]
 # Nurse Joy's House
-MapPosition=0,9,13
-ShowArea=true
+MapPosition = 0,9,13
+ShowArea = true
 #-------------------------------
 [082]
 # Bell Town Rangers
-MapPosition=0,9,13
-ShowArea=true
+MapPosition = 0,9,13
+ShowArea = true
 #-------------------------------
 [083]
 # Bell Lake
-Weather=Rain,50
-Bicycle=true
-MapPosition=0,9,13
-Outdoor=true
-ShowArea=true
+Weather = Rain,50
+Bicycle = true
+MapPosition = 0,9,13
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [084]
 # Bell Cavern
-MapPosition=0,9,13
-ShowArea=true
+MapPosition = 0,9,13
+ShowArea = true
 #-------------------------------
 [085]
 # The Belfry
-MapPosition=0,9,13
-ShowArea=true
+MapPosition = 0,9,13
+ShowArea = true
 #-------------------------------
 [086]
 # Route 2
-MapSize=2,1010
-Weather=Rain,60
-Bicycle=true
-MapPosition=0,10,12
-Outdoor=true
-ShowArea=true
+MapSize = 2,1010
+Weather = Rain,60
+Bicycle = true
+MapPosition = 0,10,12
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [087]
 # Fisherman's House
-MapPosition=0,9,13
-ShowArea=true
+MapPosition = 0,9,13
+ShowArea = true
 #-------------------------------
 [088]
 # Route 3
-MapSize=2,1100
-Weather=Rain,30
-Bicycle=true
-MapPosition=0,7,13
-Outdoor=true
-ShowArea=true
+MapSize = 2,1100
+Weather = Rain,30
+Bicycle = true
+MapPosition = 0,7,13
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [089]
 # Poke-Farm
-MapPosition=0,8,13
-ShowArea=true
+MapPosition = 0,8,13
+ShowArea = true
 #-------------------------------
 [090]
 # Lumishore City
-Weather=Rain,10
-Bicycle=true
-MapPosition=0,6,13
-Outdoor=true
-ShowArea=true
+Weather = Rain,10
+Bicycle = true
+MapPosition = 0,6,13
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [091]
 # Lumishore Mart
-MapPosition=0,6,13
-ShowArea=true
+MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [092]
 # Lumishore Poké Center
-MapPosition=0,6,13
-HealingSpot=90,55,34
-ShowArea=true
+MapPosition = 0,6,13
+HealingSpot = 90,55,34
+ShowArea = true
 #-------------------------------
 [093]
 # Thermae Casino
-MapPosition=0,6,13
-ShowArea=true
+MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [094]
 # Lumishore Gym
-MapPosition=0,6,13
-DarkMap=true
-ShowArea=true
+MapPosition = 0,6,13
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [095]
 # Lumishore Hotel
-MapPosition=0,6,13
-HealingSpot=90,38,22
-ShowArea=true
+MapPosition = 0,6,13
+HealingSpot = 90,38,22
+ShowArea = true
 #-------------------------------
 [096]
 # Lumishore Rangers
-MapPosition=0,6,13
-ShowArea=true
+MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [098]
 # S.S. Eliza Upper Deck
-MapPosition=0,6,13
-Outdoor=true
-ShowArea=true
+MapPosition = 0,6,13
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [099]
 # S.S. Eliza Captain's Cabin
-MapPosition=0,6,13
-ShowArea=true
+MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [100]
 # S.S. Eliza Deck A
-MapPosition=0,6,13
-ShowArea=true
+MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [101]
 # S.S. Eliza Deck B
-MapPosition=0,6,13
-ShowArea=true
+MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [102]
 # Milldam City
-Weather=Rain,20
-Bicycle=true
-MapPosition=0,10,11
-Outdoor=true
-ShowArea=true
+Weather = Rain,20
+Bicycle = true
+MapPosition = 0,10,11
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [103]
 # Milldam Poké Center
-MapPosition=0,10,11
-ShowArea=true
+MapPosition = 0,10,11
+ShowArea = true
 #-------------------------------
 [104]
 # Milldam Mart
-MapPosition=0,10,11
-ShowArea=true
+MapPosition = 0,10,11
+ShowArea = true
 #-------------------------------
 [105]
 # Milldam Gym
-MapPosition=0,10,11
-ShowArea=true
+MapPosition = 0,10,11
+ShowArea = true
 #-------------------------------
 [106]
 # Milldam Rangers
-MapPosition=0,10,11
-ShowArea=true
+MapPosition = 0,10,11
+ShowArea = true
 #-------------------------------
 [108]
 # Bicycle Store
-MapPosition=0,10,11
-ShowArea=true
+MapPosition = 0,10,11
+ShowArea = true
 #-------------------------------
 [109]
 # S.S. Eliza Restaurant
-MapPosition=0,6,13
-ShowArea=true
+MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [110]
 # S.S. Eliza Ship Hold
-MapPosition=0,6,13
-ShowArea=true
+MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [111]
 # S.S. Eliza Purser's Office
-MapPosition=0,6,13
+MapPosition = 0,6,13
 #-------------------------------
 [118]
 # Polder Reserve Gate
-MapPosition=0,9,10
-ShowArea=true
+MapPosition = 0,9,10
+ShowArea = true
 #-------------------------------
 [119]
 # Polder Reserve - Section A
-Weather=Rain,10
-Bicycle=true
-MapPosition=0,9,10
-SafariMap=true
-Outdoor=true
-ShowArea=true
+Weather = Rain,10
+Bicycle = true
+MapPosition = 0,9,10
+SafariMap = true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [120]
 # Polder Reserve - Section B
-Weather=Rain,20
-Bicycle=true
-MapPosition=0,9,10
-SafariMap=true
-Outdoor=true
-ShowArea=true
+Weather = Rain,20
+Bicycle = true
+MapPosition = 0,9,10
+SafariMap = true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [121]
 # Mr. Fulton's House
-MapPosition=0,10,11
-ShowArea=true
+MapPosition = 0,10,11
+ShowArea = true
 #-------------------------------
 [122]
 # Conrad's House
-MapPosition=0,10,11
-ShowArea=true
+MapPosition = 0,10,11
+ShowArea = true
 #-------------------------------
 [123]
 # The Great Dam
-MapSize=4,0110010001001100
-Weather=Rain,30
-Bicycle=true
-MapPosition=0,11,8
-Outdoor=true
-BicycleAlways=true
-ShowArea=true
+MapSize = 4,0110010001001100
+Weather = Rain,30
+Bicycle = true
+MapPosition = 0,11,8
+Outdoor = true
+BicycleAlways = true
+ShowArea = true
 #-------------------------------
 [124]
 # Hedge Point
-Weather=Rain,10
-Bicycle=true
-MapPosition=0,14,8
-Outdoor=true
-ShowArea=true
+Weather = Rain,10
+Bicycle = true
+MapPosition = 0,14,8
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [125]
 # Hedge Point Poké Center
-MapPosition=0,14,8
-HealingSpot=124,12,21
-ShowArea=true
+MapPosition = 0,14,8
+HealingSpot = 124,12,21
+ShowArea = true
 #-------------------------------
 [126]
 # Hedge Point Card Club
-MapPosition=0,14,8
-ShowArea=true
+MapPosition = 0,14,8
+ShowArea = true
 #-------------------------------
 [127]
 # Wood Carving Workshop
-MapPosition=0,14,8
-ShowArea=true
+MapPosition = 0,14,8
+ShowArea = true
 #-------------------------------
 [128]
 # Hedge Point Ruins
-MapPosition=0,14,8
-DarkMap=true
-ShowArea=true
+MapPosition = 0,14,8
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [129]
 # Bell Town Ruins
-MapPosition=0,9,13
-DarkMap=true
-ShowArea=true
+MapPosition = 0,9,13
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [131]
 # Hedge Weald
-Weather=Rain,20
-Bicycle=true
-MapPosition=0,14,8
-Outdoor=true
-ShowArea=true
+Weather = Rain,20
+Bicycle = true
+MapPosition = 0,14,8
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [132]
 # Hedge Weald Caverns
-Bicycle=true
-MapPosition=0,14,8
-ShowArea=true
+Bicycle = true
+MapPosition = 0,14,8
+ShowArea = true
 #-------------------------------
 [133]
 # Route 4
-MapSize=3,001011001
-Weather=Rain,10
-Bicycle=true
-MapPosition=0,14,7
-Outdoor=true
-ShowArea=true
+MapSize = 3,001011001
+Weather = Rain,10
+Bicycle = true
+MapPosition = 0,14,7
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [134]
 # Pokémon Daycare
-MapPosition=0,16,8
-ShowArea=true
+MapPosition = 0,16,8
+ShowArea = true
 #-------------------------------
 [135]
 # Secluded Bay
-Weather=Rain,10
-Bicycle=true
-MapPosition=0,6,13
-Outdoor=true
-ShowArea=true
+Weather = Rain,10
+Bicycle = true
+MapPosition = 0,6,13
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [136]
 # Trench Grove
-Weather=Rain,30
-Bicycle=true
-MapPosition=0,10,13
-Outdoor=true
-ShowArea=true
+Weather = Rain,30
+Bicycle = true
+MapPosition = 0,10,13
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [137]
 # Canalis City
-Weather=Snow,10
-Bicycle=true
-MapPosition=0,16,6
-Outdoor=true
-ShowArea=true
+Weather = Snow,10
+Bicycle = true
+MapPosition = 0,16,6
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [138]
 # Canalis Poké Center
-MapPosition=0,16,6
-HealingSpot=137,31,23
-ShowArea=true
+MapPosition = 0,16,6
+HealingSpot = 137,31,23
+ShowArea = true
 #-------------------------------
 [139]
 # Canalis Mart
-MapPosition=0,16,6
-Outdoor=false
-ShowArea=true
+MapPosition = 0,16,6
+Outdoor = false
+ShowArea = true
 #-------------------------------
 [140]
 # Flower Store
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [141]
 # Building A
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [142]
 # Building B
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [143]
 # Canalis Train Station
-Weather=Snow,20
-Bicycle=true
-MapPosition=0,16,6
-Outdoor=true
-ShowArea=true
+Weather = Snow,20
+Bicycle = true
+MapPosition = 0,16,6
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [144]
 # PokéGear Store
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [145]
 # Canalis Train Station
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [146]
 # Train Tunnel
-Bicycle=true
-MapPosition=0,16,6
-DarkMap=true
-Outdoor=false
-ShowArea=true
+Bicycle = true
+MapPosition = 0,16,6
+DarkMap = true
+Outdoor = false
+ShowArea = true
 #-------------------------------
 [147]
 # Galancia Helipad
-MapPosition=0,20,18
-Outdoor=true
-ShowArea=true
+MapPosition = 0,20,18
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [148]
 # Yssel Lake
-BattleBack=Snow
-Weather=Snow,50
-Bicycle=true
-MapPosition=0,16,4
-Outdoor=true
-ShowArea=true
+BattleBack = Snow
+Weather = Snow,50
+Bicycle = true
+MapPosition = 0,16,4
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [149]
 # Yssel Lake
-BattleBack=Snow
-Weather=Snow,60
-Bicycle=true
-MapPosition=0,16,4
-Outdoor=true
-ShowArea=true
+BattleBack = Snow
+Weather = Snow,60
+Bicycle = true
+MapPosition = 0,16,4
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [150]
 # Tidal Town
-Weather=Blizzard,40
-Bicycle=true
-MapPosition=0,16,1
-Outdoor=true
-HealingSpot=150,67,49
-ShowArea=true
+Weather = Blizzard,40
+Bicycle = true
+MapPosition = 0,16,1
+Outdoor = true
+HealingSpot = 150,67,49
+ShowArea = true
 #-------------------------------
 [151]
 # Tidal Mart
-MapPosition=0,16,1
-ShowArea=true
+MapPosition = 0,16,1
+ShowArea = true
 #-------------------------------
 [152]
 # Tidal Poké Center
-MapPosition=0,16,1
-HealingSpot=150,67,50
-ShowArea=true
+MapPosition = 0,16,1
+HealingSpot = 150,67,50
+ShowArea = true
 #-------------------------------
 [153]
 # Tidal Town Library
-MapPosition=0,16,1
-ShowArea=true
+MapPosition = 0,16,1
+ShowArea = true
 #-------------------------------
 [154]
 # Tidal Rangers
-MapPosition=0,16,1
-ShowArea=true
+MapPosition = 0,16,1
+ShowArea = true
 #-------------------------------
 [155]
 # Adventurer's House
-MapPosition=0,16,1
-ShowArea=true
+MapPosition = 0,16,1
+ShowArea = true
 #-------------------------------
 [156]
 # Newlywed's House
-MapPosition=0,16,1
-ShowArea=true
+MapPosition = 0,16,1
+ShowArea = true
 #-------------------------------
 [158]
 # Tidal Glacier
-MapPosition=0,16,1
-ShowArea=true
+MapPosition = 0,16,1
+ShowArea = true
 #-------------------------------
 [159]
 # Yssel Excavation B1
-MapPosition=0,16,4
-ShowArea=true
+MapPosition = 0,16,4
+ShowArea = true
 #-------------------------------
 [160]
 # Yssel Excavation B2
-ShowArea=true
+ShowArea = true
 #-------------------------------
 [161]
 # Yssel Excavation B3
-MapPosition=0,16,4
-ShowArea=true
+MapPosition = 0,16,4
+ShowArea = true
 #-------------------------------
 [162]
 # Card Coliseum Lobby
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [163]
 # Waiting Room
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [164]
 # Battle Room - First Match
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [165]
 # Battle Room - First Match
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [166]
 # Battle Room - Second Match
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [167]
 # Battle Room - Second Match
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [168]
 # Battle Room - Third Match
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [170]
 # Battle Room - Fourth Match
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [171]
 # Battle Room - Fourth Match
-MapPosition=0,16,7
-ShowArea=true
+MapPosition = 0,16,7
+ShowArea = true
 #-------------------------------
 [172]
 # Battle Room - Fifth Match
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [173]
 # Battle Room - Fifth Match
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [175]
 # Trader's Den
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [176]
 # Orange Burg
-Weather=Rain,20
-Bicycle=true
-MapPosition=0,16,10
-Outdoor=true
-HealingSpot=176,39,6
-ShowArea=true
+Weather = Rain,20
+Bicycle = true
+MapPosition = 0,16,10
+Outdoor = true
+HealingSpot = 176,39,6
+ShowArea = true
 #-------------------------------
 [177]
 # Orange Burg Mart
-MapPosition=0,16,10
-ShowArea=true
+MapPosition = 0,16,10
+ShowArea = true
 #-------------------------------
 [178]
 # Orange Burg Poké Center
-MapPosition=0,16,10
-HealingSpot=176,39,6
-ShowArea=true
+MapPosition = 0,16,10
+HealingSpot = 176,39,6
+ShowArea = true
 #-------------------------------
 [179]
 # Orange Burg Rangers
-MapPosition=0,16,10
-ShowArea=true
+MapPosition = 0,16,10
+ShowArea = true
 #-------------------------------
 [180]
 # Name Rater's House
-MapPosition=0,16,10
-ShowArea=true
+MapPosition = 0,16,10
+ShowArea = true
 #-------------------------------
 [181]
 # Plant House
-MapPosition=0,16,10
-ShowArea=true
+MapPosition = 0,16,10
+ShowArea = true
 #-------------------------------
 [182]
 # Falconry Guild
-MapPosition=0,16,10
-ShowArea=true
+MapPosition = 0,16,10
+ShowArea = true
 #-------------------------------
 [183]
 # Orange Burg Gym
-MapPosition=0,16,10
-ShowArea=true
+MapPosition = 0,16,10
+ShowArea = true
 #-------------------------------
 [184]
 # Orange Burg Train Station
-Weather=Rain,10
-Bicycle=true
-MapPosition=0,16,10
-Outdoor=true
-ShowArea=true
+Weather = Rain,10
+Bicycle = true
+MapPosition = 0,16,10
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [185]
 # Orange Burg Train Station
-MapPosition=0,16,10
-ShowArea=true
+MapPosition = 0,16,10
+ShowArea = true
 #-------------------------------
 [186]
 # Train to Canalis
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [187]
 # Train to Orange Burg
-MapPosition=0,16,10
-ShowArea=true
+MapPosition = 0,16,10
+ShowArea = true
 #-------------------------------
 [188]
 # Route 5
-MapSize=3,100100100
-Weather=Rain,20
-Bicycle=true
-MapPosition=0,15,11
-Outdoor=true
-ShowArea=true
+MapSize = 3,100100100
+Weather = Rain,20
+Bicycle = true
+MapPosition = 0,15,11
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [189]
 # Wooper Well
-MapPosition=0,16,13
-Outdoor=false
-ShowArea=true
+MapPosition = 0,16,13
+Outdoor = false
+ShowArea = true
 #-------------------------------
 [190]
 # Route 5 Ruins
-MapPosition=0,16,11
-DarkMap=true
-ShowArea=true
+MapPosition = 0,16,11
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [191]
 # Harrow's Descent Cellars
-MapPosition=0,16,11
-DarkMap=true
-ShowArea=true
+MapPosition = 0,16,11
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [192]
 # Floralia Town
-Weather=Flower,30
-Bicycle=true
-MapPosition=0,17,13
-Outdoor=true
-HealingSpot=192,4,22
-ShowArea=true
+Weather = Flower,30
+Bicycle = true
+MapPosition = 0,17,13
+Outdoor = true
+HealingSpot = 192,4,22
+ShowArea = true
 #-------------------------------
 [193]
 # Floralia Mart
-MapPosition=0,17,13
-ShowArea=true
+MapPosition = 0,17,13
+ShowArea = true
 #-------------------------------
 [194]
 # Floralia Poké Center
-MapPosition=0,17,13
-HealingSpot=192,4,22
-ShowArea=true
+MapPosition = 0,17,13
+HealingSpot = 192,4,22
+ShowArea = true
 #-------------------------------
 [195]
 # Bug Catcher's House
-MapPosition=0,17,13
-ShowArea=true
+MapPosition = 0,17,13
+ShowArea = true
 #-------------------------------
 [196]
 # Floralia Orphanage
-MapPosition=0,17,13
-ShowArea=true
+MapPosition = 0,17,13
+ShowArea = true
 #-------------------------------
 [197]
 # Floral Fields
-Weather=Flower,50
-Bicycle=true
-MapPosition=0,17,13
-Outdoor=true
-ShowArea=true
+Weather = Flower,50
+Bicycle = true
+MapPosition = 0,17,13
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [198]
 # Floral Fields Entrance
-MapPosition=0,17,13
-ShowArea=true
+MapPosition = 0,17,13
+ShowArea = true
 #-------------------------------
 [199]
 # Floral Fields Pavillion
-MapPosition=0,17,13
-ShowArea=true
+MapPosition = 0,17,13
+ShowArea = true
 #-------------------------------
 [200]
 # The Great Dam
-Weather=Rain,30
-MapPosition=0,13,8
-Outdoor=true
-ShowArea=true
+Weather = Rain,30
+MapPosition = 0,13,8
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [202]
 # Polder Reserve - Section C
-Weather=Rain,30
-Bicycle=true
-MapPosition=0,9,10
-SafariMap=true
-Outdoor=true
-ShowArea=true
+Weather = Rain,30
+Bicycle = true
+MapPosition = 0,9,10
+SafariMap = true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [203]
 # Polder Reserve - Section D
-MapPosition=0,9,10
-SafariMap=true
-DarkMap=true
-ShowArea=true
+MapPosition = 0,9,10
+SafariMap = true
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [204]
 # Harrow's Descent Archives
-MapPosition=0,16,12
-DarkMap=true
-ShowArea=true
+MapPosition = 0,16,12
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [205]
 # Strait of Whorls
-Weather=Storm,50
-Bicycle=true
-MapPosition=0,12,8
-Outdoor=true
-ShowArea=true
+Weather = Storm,50
+Bicycle = true
+MapPosition = 0,12,8
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [206]
 # Lighthouse
-MapPosition=0,13,8
-ShowArea=true
+MapPosition = 0,13,8
+ShowArea = true
 #-------------------------------
 [207]
 # Mysterious Tower
-Weather=Rain,20
-Bicycle=true
-MapPosition=0,14,8
-Outdoor=true
-ShowArea=true
+Weather = Rain,20
+Bicycle = true
+MapPosition = 0,14,8
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [208]
 # Route 6
-Weather=Rain,30
-Bicycle=true
-MapPosition=0,18,14
-Outdoor=true
-ShowArea=true
+Weather = Rain,30
+Bicycle = true
+MapPosition = 0,18,14
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [209]
 # Harrow's Descent Pillar
-MapPosition=0,14,8
-DarkMap=true
-ShowArea=true
+MapPosition = 0,14,8
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [210]
 # Harrow's Ascent - Base
-MapPosition=0,14,8
-ShowArea=true
+MapPosition = 0,14,8
+ShowArea = true
 #-------------------------------
 [213]
 # Forest of Dukes
-Weather=Rain,30
-Bicycle=true
-MapPosition=0,16,8
-Outdoor=true
-ShowArea=true
+Weather = Rain,30
+Bicycle = true
+MapPosition = 0,16,8
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [214]
 # Coliseum VIP Lodge
-MapPosition=0,16,6
-ShowArea=true
+MapPosition = 0,16,6
+ShowArea = true
 #-------------------------------
 [215]
 # Gallow's Mount B1
-Bicycle=false
-MapPosition=0,18,14
-ShowArea=true
+Bicycle = false
+MapPosition = 0,18,14
+ShowArea = true
 #-------------------------------
 [216]
 # Gallow's Mount B2
-Bicycle=false
-MapPosition=0,18,14
-Outdoor=false
-ShowArea=true
+Bicycle = false
+MapPosition = 0,18,14
+Outdoor = false
+ShowArea = true
 #-------------------------------
 [217]
 # Sulfur City
-Bicycle=true
-MapPosition=0,18,15
-Outdoor=true
-ShowArea=true
+Bicycle = true
+MapPosition = 0,18,15
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [218]
 # Sulfur Poké Center
-MapPosition=0,18,15
-ShowArea=true
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [219]
 # Sulfur Mart
-MapPosition=0,18,15
-ShowArea=true
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [220]
 # Sulfur City Rangers
-MapPosition=0,18,15
-ShowArea=true
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [221]
 # Apricorn House
-MapPosition=0,18,15
-ShowArea=true
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [222]
 # Sulfur City Gym
-MapPosition=0,18,15
-ShowArea=true
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [223]
 # Storage
-MapSize=0,
-MapPosition=0,18,15
-ShowArea=true
+MapSize = 0,
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [224]
 # Growlithe House
-MapPosition=0,18,15
-ShowArea=true
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [225]
 # Harrow's Descent Gardens
-MapPosition=0,10,12
-DarkMap=true
-ShowArea=true
+MapPosition = 0,10,12
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [226]
 # Harrow's Descent Ledge
-MapPosition=0,10,12
-DarkMap=true
-ShowArea=true
+MapPosition = 0,10,12
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [227]
 # Harrow's Descent Antechamber
-MapPosition=0,14,8
-DarkMap=true
-ShowArea=true
+MapPosition = 0,14,8
+DarkMap = true
+ShowArea = true
 #-------------------------------
 [228]
 # Molten Precipice 1F
-MapPosition=0,18,15
-ShowArea=true
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [230]
 # Molten Precipice 2F
-MapPosition=0,18,15
-ShowArea=true
+MapPosition = 0,18,15
+ShowArea = true
 #-------------------------------
 [231]
 # Molten Precipice 3F
-Weather=Rain,20
-MapPosition=0,18,15
-Outdoor=true
-ShowArea=true
+Weather = Rain,20
+MapPosition = 0,18,15
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [232]
 # Ashen Flanks
-Weather=Rain,10
-Bicycle=true
-MapPosition=0,17,15
-Outdoor=true
-ShowArea=true
+Weather = Rain,10
+Bicycle = true
+MapPosition = 0,17,15
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [233]
 # Route 7
-MapSize=4,1111
-Weather=Rain,20
-Bicycle=true
-MapPosition=0,14,15
-Outdoor=true
-ShowArea=true
+MapSize = 4,1111
+Weather = Rain,20
+Bicycle = true
+MapPosition = 0,14,15
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [236]
 # Poké-Springs
-Bicycle=true
-MapPosition=0,14,15
-Outdoor=true
-ShowArea=true
+Bicycle = true
+MapPosition = 0,14,15
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [237]
 # Poké-Springs
-MapPosition=0,14,15
-Outdoor=false
-ShowArea=true
+MapPosition = 0,14,15
+Outdoor = false
+ShowArea = true
