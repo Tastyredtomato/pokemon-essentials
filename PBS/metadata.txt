@@ -1223,3 +1223,8 @@ ShowArea = true
 MapSize = 1,11
 MapPosition = 0,13,15
 ShowArea = true
+#-------------------------------
+[244]
+# Contest Hall
+MapPosition = 0,13,16
+ShowArea = true
