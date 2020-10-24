@@ -1197,3 +1197,29 @@ ShowArea = true
 MapPosition = 0,14,15
 Outdoor = false
 ShowArea = true
+#-------------------------------
+[239]
+# Industrielle City
+MapSize = 1,11
+Weather = Rain,10
+Bicycle = true
+MapPosition = 0,13,15
+Outdoor = true
+HealingSpot = 239,42,17
+ShowArea = true
+#-------------------------------
+[240]
+# Industrielle Poké Center
+MapPosition = 0,13,15
+ShowArea = true
+#-------------------------------
+[241]
+# Industrielle Train Station
+MapPosition = 0,13,16
+ShowArea = true
+#-------------------------------
+[243]
+# Industrielle Sewers B1
+MapSize = 1,11
+MapPosition = 0,13,15
+ShowArea = true
