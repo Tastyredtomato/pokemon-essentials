@@ -2172,3 +2172,19 @@ SuperRod
     AIPOM,25,28
     AIPOM,25,28
     AIPOM,25,28
+#-------------------------------
+243 # Industrielle Sewers
+25,10,10
+Cave
+    GRIMER,26,30
+    GRIMER,26,30
+    RATTATA,18,19
+    KOFFING,26,30
+    RATTATA,18,19
+    KOFFING,26,30
+    GRIMER,26,30
+    TOTODILE,12,14
+    TOTODILE,12,14
+    WEEZING,35
+    MUK,38
+    RATICATE,26,30
