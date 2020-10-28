@@ -71,6 +71,7 @@ Weight = 3.8
 Color = Black
 Pokedex = With its incisors, it gnaws through doors and infiltrates people’s homes. Then, with a twitch of its whiskers, it steals whatever food it finds.
 WildItemUncommon = PECHABERRY
+BattlerPlayerY = 30
 Evolutions = RATICATE,LevelNight,20
 #-------------------------------
 [RATICATE,1]
@@ -84,10 +85,11 @@ Weight = 25.5
 Color = Black
 Pokedex = It forms a group of Rattata, which it assumes command of. Each group has its own territory, and disputes over food happen often.
 WildItemUncommon = PECHABERRY
+BattlerPlayerY = 22
+BattlerEnemyY = 15
 #-------------------------------
 [PIKACHU,2]
 FormName = Surfing
-Type1 = ELECTRIC
 Abilities = SWIFTSWIM,DAMP
 HiddenAbility = SURGESURFER
 Moves = 0,SURF,1,TAILWHIP,1,THUNDERSHOCK,5,GROWL,7,PLAYNICE,10,QUICKATTACK,13,ELECTROBALL,18,THUNDERWAVE,21,FEINT,23,DOUBLETEAM,26,SPARK,29,NUZZLE,34,DISCHARGE,37,SLAM,42,THUNDERBOLT,45,AGILITY,50,WILDCHARGE,53,LIGHTSCREEN,58,THUNDER
@@ -95,7 +97,9 @@ Height = 0.5
 Weight = 7.0
 Pokedex = This rare Pikachu variant surfs the ocean waves, using its tail as a paddle.
 WildItemUncommon = SURFITEM
-Evolutions = RAICHU,Item,THUNDERSTONE
+BattlerPlayerY = -7
+BattlerEnemyY = 3
+BattlerShadowSize = 3
 #-------------------------------
 [RAICHU,1]
 FormName = Alolan
@@ -109,6 +113,8 @@ Height = 0.7
 Weight = 21.0
 Color = Brown
 Pokedex = It uses psychokinesis to control electricity. It hops aboard its own tail, using psychic power to lift the tail and move about while riding it.
+BattlerPlayerY = 12
+BattlerEnemyY = 14
 #-------------------------------
 [SANDSHREW,1]
 FormName = Alolan
@@ -123,6 +129,8 @@ Height = 0.7
 Weight = 40.0
 Color = White
 Pokedex = The skin on its back is as hard as steel. Predators go after its soft belly, so it clings to the ground desperately.
+BattlerPlayerY = 29
+BattlerEnemyY = 23
 Evolutions = SANDSLASH,Item,ICESTONE
 #-------------------------------
 [SANDSLASH,1]
@@ -137,6 +145,8 @@ Height = 1.2
 Weight = 55.0
 Color = Blue
 Pokedex = It runs across snow-covered plains at high speeds. It developed thick, sharp claws to plow through the snow.
+BattlerPlayerY = 26
+BattlerEnemyY = 17
 #-------------------------------
 [VULPIX,1]
 FormName = Alolan
@@ -148,6 +158,8 @@ EggMoves = AGILITY,CHARM,DISABLE,ENCORE,EXTRASENSORY,FLAIL,FREEZEDRY,HOWL,HYPNOS
 Color = White
 Pokedex = In hot weather, this Pokémon makes ice shards with its six tails and sprays them around to cool itself off.
 WildItemUncommon = SNOWBALL
+BattlerPlayerY = 24
+BattlerEnemyY = 23
 Evolutions = NINETALES,Item,ICESTONE
 #-------------------------------
 [NINETALES,1]
@@ -162,6 +174,10 @@ Moves = 0,DAZZLINGGLEAM,1,DAZZLINGGLEAM,1,IMPRISON,1,NASTYPLOT,1,ICEBEAM,1,ICESH
 Color = Blue
 Pokedex = It lives on mountains perpetually covered in snow and is revered as a deity incarnate. It appears draped in a blizzard.
 WildItemUncommon = SNOWBALL
+BattlerPlayerX = -5
+BattlerPlayerY = 14
+BattlerEnemyY = 10
+BattlerShadowSize = 3
 #-------------------------------
 [DIGLETT,1]
 FormName = Alolan
@@ -173,6 +189,7 @@ Moves = 1,SANDATTACK,1,METALCLAW,4,GROWL,7,ASTONISH,10,MUDSLAP,14,MAGNITUDE,18,B
 EggMoves = ANCIENTPOWER,BEATUP,ENDURE,FEINTATTACK,FINALGAMBIT,HEADBUTT,MEMENTO,METALSOUND,PURSUIT,REVERSAL,THRASH
 Weight = 1.0
 Pokedex = Its head sports an altered form of whiskers made of metal. When in communication with its comrades, its whiskers wobble to and fro.
+BattlerPlayerY = 33
 #-------------------------------
 [DUGTRIO,1]
 FormName = Alolan
@@ -184,6 +201,8 @@ Abilities = SANDVEIL,TANGLINGHAIR
 Moves = 0,SANDTOMB,1,SANDTOMB,1,ROTOTILLER,1,NIGHTSLASH,1,TRIATTACK,1,SANDATTACK,1,METALCLAW,1,GROWL,4,GROWL,7,ASTONISH,10,MUDSLAP,14,MAGNITUDE,18,BULLDOZE,22,SUCKERPUNCH,25,MUDBOMB,30,EARTHPOWER,35,DIG,41,IRONHEAD,47,EARTHQUAKE,53,FISSURE
 Weight = 66.6
 Pokedex = Its shining gold hair provides it with protection. It's reputed that keeping any of its fallen hairs will bring bad luck.
+BattlerPlayerY = 25
+BattlerEnemyY = 22
 #-------------------------------
 [MEOWTH,1]
 FormName = Alolan
@@ -194,6 +213,7 @@ Moves = 1,SCRATCH,1,GROWL,6,BITE,9,FAKEOUT,14,FURYSWIPES,17,SCREECH,22,FEINTATTA
 EggMoves = AMNESIA,ASSIST,CHARM,COVET,FLAIL,FLATTER,FOULPLAY,HYPNOSIS,PARTINGSHOT,PUNISHMENT,SNATCH,SPITE
 Color = Blue
 Pokedex = It's impulsive, selfish, and fickle. It's very popular with some Trainers who like giving it the attention it needs.
+BattlerPlayerY = 25
 Evolutions = PERSIAN,Happiness,
 #-------------------------------
 [PERSIAN,1]
@@ -207,6 +227,8 @@ Height = 1.1
 Weight = 33.0
 Color = Blue
 Pokedex = Its round face is a symbol of wealth. Persian that have bigger, plumper faces are considered more beautiful.
+BattlerPlayerY = 16
+BattlerEnemyY = 13
 #-------------------------------
 [ALAKAZAM,1]
 FormName = Mega Alakazam
@@ -229,6 +251,8 @@ Weight = 20.3
 Color = Gray
 Pokedex = Geodude compete against each other with headbutts. The iron sand on their heads will stick to whichever one has stronger magnetism.
 WildItemUncommon = CELLBATTERY
+BattlerPlayerY = 37
+BattlerEnemyY = 25
 #-------------------------------
 [GRAVELER,1]
 FormName = Alolan
@@ -241,6 +265,8 @@ Weight = 110.0
 Color = Gray
 Pokedex = They eat rocks and often get into a scrap over them. The shock of Graveler smashing together causes a flash of light and a booming noise.
 WildItemUncommon = CELLBATTERY
+BattlerPlayerY = 30
+BattlerEnemyY = 21
 #-------------------------------
 [GOLEM,1]
 FormName = Alolan
@@ -254,6 +280,8 @@ Weight = 316.0
 Color = Gray
 Pokedex = It fires rocks charged with electricity. Even if the rock isn't fired that accurately, just grazing an opponent will cause numbness and fainting.
 WildItemCommon = CELLBATTERY
+BattlerPlayerY = 16
+BattlerEnemyY = 12
 #-------------------------------
 [SLOWBRO,1]
 FormName = Mega Slowbro
@@ -278,6 +306,8 @@ Height = 0.7
 Weight = 42.0
 Color = Green
 Pokedex = A Grimer, which had been brought in to solve a problem with garbage, developed over time into this form.
+BattlerPlayerY = 30
+BattlerEnemyY = 25
 #-------------------------------
 [MUK,1]
 FormName = Alolan
@@ -290,6 +320,8 @@ Height = 1.0
 Weight = 52.0
 Color = Green
 Pokedex = The garbage it eats causes continuous chemical changes in its body, which produce its exceedingly vivid coloration.
+BattlerPlayerY = 18
+BattlerEnemyY = 13
 #-------------------------------
 [GENGAR,1]
 FormName = Mega Gengar
@@ -310,6 +342,11 @@ Moves = 0,DRAGONHAMMER,1,DRAGONHAMMER,1,SEEDBOMB,1,BARRAGE,1,HYPNOSIS,1,CONFUSIO
 Height = 10.9
 Weight = 415.6
 Pokedex = As it grew taller and taller, it outgrew its reliance on psychic powers, while within it awakened the power of the sleeping dragon.
+BattlerPlayerX = -4
+BattlerPlayerY = 43
+BattlerEnemyX = 4
+BattlerEnemyY = 8
+BattlerShadowSize = 3
 #-------------------------------
 [CUBONE,1]
 Evolutions = MAROWAK,LevelNight,28
@@ -324,6 +361,8 @@ Moves = 1,GROWL,1,TAILWHIP,1,BONECLUB,1,FLAMEWHEEL,3,TAILWHIP,7,BONECLUB,11,FLAM
 Weight = 34.0
 Color = Purple
 Pokedex = Its custom is to mourn its lost companions. Mounds of dirt by the side of the road mark the graves of the Marowak
+BattlerPlayerY = 29
+BattlerEnemyY = 24
 #-------------------------------
 [KANGASKHAN,1]
 FormName = Mega Kangaskhan
@@ -391,10 +430,11 @@ Weight = 33.0
 Pokedex = Despite its diminished size, its mental power has grown phenomenally. With a mere thought, it can smash a skyscraper to smithereens.
 #-------------------------------
 [MEWTWO,3]
-FormName=Armoured Mewtwo
-Type1=PSYCHIC
-Type2=FIGHTING
+FormName = Armoured Mewtwo
+Type1 = PSYCHIC
+Type2 = FIGHTING
 Pokedex = Amplified and tempered by Team Rocket's armour, Armoured Mewtwo has the capability to balance out its psychic and physical strength.
+BattlerShadowX = 9
 #-------------------------------
 [PICHU,1]
 FormName = Spiky-Eared
@@ -792,4 +832,3 @@ BattlerPlayerX = -4
 BattlerEnemyX = -4
 BattlerEnemyY = 4
 BattlerShadowSize = 3
-#-------------------------------
