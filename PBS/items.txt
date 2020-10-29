@@ -746,3 +746,5 @@
 727,GOLDPOKEBLOCK10,Gold Pokéblock,Gold Pokéblocks,2,0,"A sweet/bitter/sour high-grade Pokéblock.",1,0,0,
 728,BLACKPOKEBLOCK,Black Pokéblock,Black Pokéblocks,2,0,"A low-grade Pokéblock.",1,0,0,
 #ENDPOKEBLOCKS
+729,HOTCOFFEE,Hot Coffee,Hot Coffees,7,200,"A cup of piping hot coffee. It boosts the Speed stat of a Pokémon while it remains in battle.",1,1,0,
+730,CHEFSHAT,Chef's Hat,Chef's Hats,1,100,"An item to be held by a Pokémon. It is a chef's hat that boosts the power of Fire-type moves.",0,0,0,

@@ -101,6 +101,20 @@ BattlerPlayerY = -7
 BattlerEnemyY = 3
 BattlerShadowSize = 3
 #-------------------------------
+[PIKACHU,3]
+FormName = Chef
+Type1 = ELECTRIC
+Type2 = FIRE
+Abilities = STATIC
+HiddenAbility = FLASHFIRE
+Moves = 1,TAILWHIP,1,THUNDERSHOCK,4,EMBER,5,GROWL,7,PLAYNICE,8,SMOKESCREEN,10,QUICKATTACK,13,ELECTROBALL,17,FIREFANG,18,THUNDERWAVE,21,FEINT,23,DOUBLETEAM,24,FLAMETHROWER,26,SPARK,29,NUZZLE,34,DISCHARGE,36,INFERNO,37,SLAM,42,THUNDERBOLT,45,AGILITY,50,WILDCHARGE,53,LIGHTSCREEN,58,THUNDER
+Height = 0.5
+Weight = 7.0
+Pokedex = This rare Pikachu variant loves cooking! And it loves ketchup the most!
+BattlerPlayerY = -7
+BattlerEnemyY = 3
+BattlerShadowSize = 3
+#-------------------------------
 [RAICHU,1]
 FormName = Alolan
 Type1 = ELECTRIC
