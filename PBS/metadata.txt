@@ -1185,6 +1185,11 @@ MapPosition = 0,14,15
 Outdoor = true
 ShowArea = true
 #-------------------------------
+[235]
+# Molten Ruins
+MapPosition = 0,17,15
+ShowArea = true
+#-------------------------------
 [236]
 # Poké-Springs
 Bicycle = true
@@ -1197,6 +1202,13 @@ ShowArea = true
 MapPosition = 0,14,15
 Outdoor = false
 ShowArea = true
+#-------------------------------
+[238]
+# Surfing Pikachu
+Bicycle = false
+MapPosition = 0,6,13
+Outdoor = true
+ShowArea = false
 #-------------------------------
 [239]
 # Industrielle City
@@ -1228,4 +1240,16 @@ ShowArea = true
 [244]
 # Contest Hall
 MapPosition = 0,13,16
+ShowArea = true
+#-------------------------------
+[246]
+# Chef Pikachu
+MapPosition = 0,13,15
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[247]
+# Chef Pikachu
+MapPosition = 0,13,15
+Outdoor = false
 ShowArea = true
