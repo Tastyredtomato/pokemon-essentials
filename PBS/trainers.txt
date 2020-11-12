@@ -462,7 +462,7 @@ Pokemon = BELLSPROUT,14
 Pokemon = BELLOSSOM,22
 #-------------------------------
 [BIRDKEEPER,Benjamin]
-LoseText = " "
+LoseText = "My poor little birds..."
 Pokemon = WINGULL,8
 Pokemon = DELIBIRD,9
 #-------------------------------

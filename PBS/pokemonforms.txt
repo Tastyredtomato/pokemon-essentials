@@ -546,6 +546,11 @@ FormName = ?
 [UNOWN,27]
 FormName = !
 #-------------------------------
+[UNOWN,28]
+FormName = OMEGA
+Pokedex = This Unown variation is said to have been common in ancient times. Now there are only few left, hiding in the Unown Dimension.
+Moves = 1,HIDDENPOWER,28,EARTHPOWER,37,SUPERPOWER,55,COSMICPOWER
+#-------------------------------
 [STEELIX,1]
 FormName = Mega Steelix
 MegaStone = STEELIXITE
