@@ -1253,3 +1253,9 @@ ShowArea = true
 MapPosition = 0,13,15
 Outdoor = false
 ShowArea = true
+#-------------------------------
+[248]
+# Unown Dimension
+Bicycle = false
+Outdoor = false
+ShowArea = true
