@@ -120,5 +120,7 @@
 239,East,0,236,West,2
 # Route 7 (233) - Ashen Flanks (232)
 233,North,20,232,South,0
+# Industrielle City (239) - Industrielle City (249)
+239,West,2,249,East,0
 # Industrielle City (239) - Route 7 (233)
 239,East,13,233,West,0
