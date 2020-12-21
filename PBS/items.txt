@@ -766,3 +766,5 @@
 746,DRAGONCHARM,Dragon Charm,Dragon Charms,8,0,"A red charm said to increase the odds of catching Dragon Type Pokémon.",0,0,6,
 747,DARKCHARM,Dark Charm,Dark Charms,8,0,"A black charm said to increase the odds of catching Dark Type Pokémon.",0,0,6,
 748,FAIRYCHARM,Fairy Charm,Fairy Charms,8,0,"A pink charm said to increase the odds of catching Fairy Type Pokémon.",0,0,6,
+749,HM08,HM08,HM08s,4,0,"The user flashes a bright light that cuts the target's accuracy. It can also be used to illuminate dark caves.",4,0,0,FLASH
+750,FUSE,Fuse,Fuses,8,0,"A fuse to an electric device. Use it to fix broken fuse boxes.",0,0,6,

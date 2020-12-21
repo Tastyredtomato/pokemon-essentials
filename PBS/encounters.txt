@@ -741,7 +741,7 @@ SuperRod
     CHINCHOU,10,20
     SHELLDER,10,20
 #-------------------------------
-119 # Polder Reserve - Section A
+119 # Polder Reserve - A
 25,10,10
 Water
     KRABBY,7,15
@@ -789,7 +789,7 @@ LandNight
     WINGULL,5,15
     PELIPPER,25,27
 #-------------------------------
-120 # Polder Reserve - Section B
+120 # Polder Reserve - B
 25,10,10
 Water
     KRABBY,7,15
@@ -1532,7 +1532,7 @@ Cave
     UNOWN,5
     UNOWN,5
 #-------------------------------
-191 # Harrow's Descent Cellars
+191 # Harrow's Descent Cellar
 25,10,10
 Cave
     DUSKULL,22,25
@@ -1647,7 +1647,7 @@ Water
     CHINCHOU,18,24
     TENTACOOL,18,24
 #-------------------------------
-202 # Polder Reserve - Section C
+202 # Polder Reserve - C
 25,10,10
 Water
     TENTACOOL,10,19
@@ -1695,7 +1695,7 @@ LandNight
     SWABLU,10,20
     SQUIRTLE,10,20
 #-------------------------------
-203 # Polder Reserve - Section D
+203 # Polder Reserve - D
 25,10,10
 Cave
     ZUBAT,10,20
@@ -1730,7 +1730,7 @@ SuperRod
     CORPHISH,15,25
     DRAGONAIR,30,32
 #-------------------------------
-204 # Harrow's Descent Archives
+204 # Harrow's Descent Archive
 25,10,10
 Cave
     DUSKULL,22,25
@@ -1985,7 +1985,7 @@ SuperRod
     DRAGONAIR,30,35
     DRAGONITE,55
 #-------------------------------
-227 # Harrow's Descent Antechamber
+227 # Harrow's Descent Narthex
 25,10,10
 Cave
     UNOWN,25
@@ -2208,28 +2208,86 @@ Cave
 249 # Industrielle City
 25,10,10
 LandDay
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
+    PIKACHU,26,28
+    HYPNO,26,28
+    MRMIME,26,28
+    FURRET,26,28
+    MEDITITE,26,28
+    PHANPY,24
+    PIKACHU,26,28
+    HYPNO,26,28
+    MRMIME,26,28
+    FURRET,26,28
+    MEDITITE,26,28
+    DONPHAN,26,28
 LandNight
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
-    BULBASAUR,5
+    VULPIX,26,28
+    KADABRA,26,28
+    MRMIME,26,28
+    NOCTOWL,26,28
+    MIGHTYENA,26,28
+    DONPHAN,26,28
+    VULPIX,26,28
+    KADABRA,26,28
+    MRMIME,26,28
+    NOCTOWL,26,28
+    MIGHTYENA,26,28
+    DONPHAN,26,28
+#-------------------------------
+251 # Fiddle Fen - West
+25,10,10
+LandDay
+    LOTAD,5,7
+    HOPPIP,5,7
+    LOTAD,5,7
+    WURMPLE,5,7
+    PIDGEY,5,7
+    WEEDLE,5,7
+    MUDKIP,5,7
+    WEEDLE,5,7
+    FARFETCHD,5,7
+    FARFETCHD,5,10
+    WEEDLE,5,7
+    ELECTRIKE,5,10
+LandNight
+    GULPIN,5,7
+    ODDISH,5,7
+    HOOTHOOT,5,7
+    CATERPIE,5,7
+    GULPIN,5,7
+    CATERPIE,5,7
+    TANGELA,5,7
+    WURMPLE,5,7
+    STANTLER,5,10
+    WURMPLE,5,7
+    WEEDLE,5,7
+    KECLEON,5,10
+#-------------------------------
+252 # Fiddle Fen - East
+25,10,10
+LandDay
+    LOMBRE,28,30
+    SKIPLOOM,25,26
+    STANTLER,28,30
+    GIRAFARIG,28,30
+    PINECO,28,30
+    PINECO,28,30
+    BUTTERFREE,28,30
+    LOMBRE,28,30
+    TROPIUS,28,30
+    KANGASKHAN,28,30
+    TROPIUS,28,30
+    MANECTRIC,28,30
+LandNight
+    SWALOT,28,30
+    GLOOM,28,30
+    STANTLER,28,30
+    KANGASKHAN,28,30
+    PINECO,28,30
+    PINECO,28,30
+    NOCTOWL,28,30
+    BEEDRILL,28,30
+    HERACROSS,28,30
+    GIRAFARIG,28,30
+    TROPIUS,28,30
+    KECLEON,28,30

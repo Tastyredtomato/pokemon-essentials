@@ -43,4 +43,6 @@ Point = 15,15,Route 7,,,,,
 Point = 14,15,Route 7,Poké-Springs,,,,
 Point = 13,15,Industrielle City,Government Offices,239,42,17,
 Point = 13,16,Industrielle City,Contest Hall,,,,
-
+Point = 11,15,Fiddle Fen,Marsh Ruins,,,,
+Point = 10,15,Fiddle Fen,,,,,
+Point = 12,15,Fiddle Fen,,,,,

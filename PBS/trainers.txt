@@ -882,3 +882,50 @@ Pokemon = SMEARGLE,32
 LoseText = "No! I lost my bait."
 Pokemon = MAGIKARP,15
 Pokemon = WAILMER,34
+#--------------------------------
+[ENGINEER,Daniel]
+LoseText = "Aghk, my fuses blew!"
+Pokemon = MAGNEMITE,29
+Pokemon = MAGNEMITE,29
+Pokemon = MAGNETON,35
+#--------------------------------
+[ENGINEER,Frank]
+LoseText = "Hmm, back to moving containers for me."
+Pokemon = VOLTORB,34
+Pokemon = VOLTORB,35
+#--------------------------------
+[ENGINEER,Dominic]
+LoseText = "We really need a backup generator."
+Pokemon = MAGNEMITE,28
+Pokemon = ELECTABUZZ,34
+#--------------------------------
+[BUGCATCHER1,Evert]
+LoseText = "M...My Pokémon!"
+Pokemon = CATERPIE,2
+Pokemon = WEEDLE,3
+#--------------------------------
+[BUGCATCHER1,Georges]
+LoseText = "I'm gone too!"
+Pokemon = HERACROSS,20
+Pokemon = PINSIR,20
+Pokemon = SCYTHER,20
+#--------------------------------
+[BUGCATCHER1,Jules]
+LoseText = "Eck, I slipped!"
+Pokemon = SURSKIT,20
+Pokemon = MASQUERAIN,22
+#--------------------------------
+[BUGCATCHER1,Modeste]
+LoseText = "And a fight I got!"
+Pokemon = ARIADOS,30
+Pokemon = ARIADOS,30
+#--------------------------------
+[BUGCATCHER1,Pierre]
+LoseText = "Ruined!"
+Pokemon = SHUCKLE,32
+Pokemon = ANORITH,30
+#--------------------------------
+[BUGCATCHER1,Serge]
+LoseText = "I tripped..."
+Pokemon = BEAUTIFLY,31
+Pokemon = DUSTOX,31

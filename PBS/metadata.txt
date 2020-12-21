@@ -531,7 +531,7 @@ MapPosition = 0,9,10
 ShowArea = true
 #-------------------------------
 [119]
-# Polder Reserve - Section A
+# Polder Reserve - A
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,9,10
@@ -540,7 +540,7 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [120]
-# Polder Reserve - Section B
+# Polder Reserve - B
 Weather = Rain,20
 Bicycle = true
 MapPosition = 0,9,10
@@ -942,7 +942,7 @@ DarkMap = true
 ShowArea = true
 #-------------------------------
 [191]
-# Harrow's Descent Cellars
+# Harrow's Descent Cellar
 MapPosition = 0,16,11
 DarkMap = true
 ShowArea = true
@@ -1003,7 +1003,7 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [202]
-# Polder Reserve - Section C
+# Polder Reserve - C
 Weather = Rain,30
 Bicycle = true
 MapPosition = 0,9,10
@@ -1012,14 +1012,14 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [203]
-# Polder Reserve - Section D
+# Polder Reserve - D
 MapPosition = 0,9,10
 SafariMap = true
 DarkMap = true
 ShowArea = true
 #-------------------------------
 [204]
-# Harrow's Descent Archives
+# Harrow's Descent Archive
 MapPosition = 0,16,12
 DarkMap = true
 ShowArea = true
@@ -1146,7 +1146,7 @@ DarkMap = true
 ShowArea = true
 #-------------------------------
 [227]
-# Harrow's Descent Antechamber
+# Harrow's Descent Narthex
 MapPosition = 0,14,8
 DarkMap = true
 ShowArea = true
@@ -1266,4 +1266,29 @@ Weather = Rain,30
 Bicycle = true
 MapPosition = 0,13,15
 Outdoor = true
+ShowArea = true
+#-------------------------------
+[250]
+# Station Warehouse
+Bicycle = false
+MapPosition = 0,13,16
+DarkMap = true
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[251]
+# Fiddle Fen - West
+Weather = Rain,60
+Bicycle = true
+MapPosition = 0,11,15
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[252]
+# Fiddle Fen - East
+Weather = Rain,60
+Bicycle = true
+MapPosition = 0,11,15
+Outdoor = true
+Environment = None
 ShowArea = true
