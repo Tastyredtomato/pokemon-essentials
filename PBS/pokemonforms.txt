@@ -411,6 +411,13 @@ HiddenAbility = MOLDBREAKER
 Weight = 305.0
 Pokedex = It zooms out of the water at Mach speeds. Even large ships caught in its path are split cleanly in two!
 #-------------------------------
+[PORYGON,1]
+FormName = Missingno.
+Type1 = FLYING
+Type2 = NORMAL
+BaseStats = 60,115,105,80,65,70
+Pokedex = A rare corruption of data that warps reality around itself. Recently it was found in the ruins below Netivih where it jeopardized the surface world.
+#-------------------------------
 [AERODACTYL,1]
 FormName = Mega Aerodactyl
 MegaStone = AERODACTYLITE

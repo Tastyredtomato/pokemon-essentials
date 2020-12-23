@@ -1292,3 +1292,16 @@ MapPosition = 0,11,15
 Outdoor = true
 Environment = None
 ShowArea = true
+#-------------------------------
+[253]
+# Pokemon Adventure
+Bicycle = false
+Dungeon = true
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[254]
+# Harrow's Descent - Corruption
+MapPosition = 0,11,15
+Outdoor = false
+ShowArea = true
