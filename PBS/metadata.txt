@@ -136,7 +136,7 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [033]
-# \PN's house
+# \PN's House
 MapPosition = 0,9,15
 HealingSpot = 32,19,12
 ShowArea = true
@@ -184,6 +184,7 @@ ShowArea = true
 [042]
 # Poplar's Lab
 MapPosition = 0,9,15
+ShowArea = true
 #-------------------------------
 [043]
 # Route 1
@@ -218,8 +219,9 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [048]
-# Jubilee's house
+# Jubilee's House
 MapPosition = 0,9,15
+ShowArea = true
 #-------------------------------
 [049]
 # Rock Cave
@@ -335,6 +337,7 @@ Outdoor = true
 [076]
 # Old Couple's House
 MapPosition = 0,9,15
+ShowArea = true
 #-------------------------------
 [077]
 # Strongman's House
@@ -457,6 +460,11 @@ ShowArea = true
 MapPosition = 0,6,13
 ShowArea = true
 #-------------------------------
+[097]
+# Abandoned House
+MapPosition = 0,9,13
+ShowArea = true
+#-------------------------------
 [098]
 # S.S. Eliza Upper Deck
 MapPosition = 0,6,13
@@ -506,6 +514,11 @@ ShowArea = true
 MapPosition = 0,10,11
 ShowArea = true
 #-------------------------------
+[107]
+# Maxwell's House
+MapPosition = 0,9,13
+ShowArea = true
+#-------------------------------
 [108]
 # Bicycle Store
 MapPosition = 0,10,11
@@ -524,6 +537,7 @@ ShowArea = true
 [111]
 # S.S. Eliza Purser's Office
 MapPosition = 0,6,13
+ShowArea = true
 #-------------------------------
 [118]
 # Polder Reserve Gate
@@ -602,6 +616,11 @@ ShowArea = true
 # Bell Town Ruins
 MapPosition = 0,9,13
 DarkMap = true
+ShowArea = true
+#-------------------------------
+[130]
+# Milldam Powerplant
+MapPosition = 0,10,11
 ShowArea = true
 #-------------------------------
 [131]
@@ -1002,6 +1021,11 @@ MapPosition = 0,13,8
 Outdoor = true
 ShowArea = true
 #-------------------------------
+[201]
+# Pokémon Insect Institute
+MapPosition = 0,17,13
+ShowArea = true
+#-------------------------------
 [202]
 # Polder Reserve - C
 Weather = Rain,30
@@ -1156,6 +1180,11 @@ ShowArea = true
 MapPosition = 0,18,15
 ShowArea = true
 #-------------------------------
+[229]
+# Sulfur City Checkpoint
+MapPosition = 0,18,15
+ShowArea = true
+#-------------------------------
 [230]
 # Molten Precipice 2F
 MapPosition = 0,18,15
@@ -1301,7 +1330,16 @@ Outdoor = false
 ShowArea = true
 #-------------------------------
 [254]
-# Harrow's Descent - Corruption
+# Harrow's Descent Corruption
 MapPosition = 0,11,15
 Outdoor = false
+ShowArea = true
+#-------------------------------
+[255]
+# Fiddle Fen - Ruins
+Weather = Rain,30
+Bicycle = true
+MapPosition = 0,11,15
+Outdoor = true
+HealingSpot = 255,28,6
 ShowArea = true

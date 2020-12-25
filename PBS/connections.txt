@@ -124,5 +124,9 @@
 239,West,2,249,East,0
 # Industrielle City (239) - Route 7 (233)
 239,East,13,233,West,0
+# Fiddle Fen - West (251) - Fiddle Fen - Ruins (255)
+251,North,15,255,South,0
+# Fiddle Fen - East (252) - Fiddle Fen - Ruins (255)
+252,North,0,255,South,25
 # Fiddle Fen - East (252) - Fiddle Fen - West (251)
 252,West,0,251,East,0
