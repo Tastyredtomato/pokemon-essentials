@@ -1262,8 +1262,10 @@ ShowArea = true
 [243]
 # Industrielle Sewers
 MapSize = 1,11
+BattleBack = city
 MapPosition = 0,13,15
 DarkMap = true
+Environment = None
 ShowArea = true
 #-------------------------------
 [244]
