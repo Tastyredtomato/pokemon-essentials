@@ -673,13 +673,15 @@ Pokemon = FEAROW,21
 [RIVAL2,Jubilee,4]
 LoseText = " "
 Items = FULLRESTORE,FULLRESTORE
-Pokemon = SHUPPET,27
+Pokemon = SHUPPET,28
 	Gender = Female
 Pokemon = GLOOM,28
 	Gender = Male
-Pokemon = NIDOQUEEN,28
+Pokemon = NIDOQUEEN,29
+	Moves = ICEPUNCH,BITE,DOUBLEKICK,TOXIC
 Pokemon = KIRLIA,29
 	Gender = Female
+	Moves = CONFUSION,DRAININGKISS,DOUBLETEAM,DISARMINGVOICE
 #-------------------------------
 [TEAMROCKET_MF2,Marius and Nikki]
 LoseText = "I lost...How?"
