@@ -188,6 +188,7 @@ ShowArea = true
 #-------------------------------
 [043]
 # Route 1
+BattleBack = battlebgRoute
 Weather = Rain,30
 Bicycle = true
 MapPosition = 0,9,14
@@ -341,6 +342,7 @@ ShowArea = true
 #-------------------------------
 [077]
 # Strongman's House
+BattleBack = battlebgIndoorZ
 MapPosition = 0,9,14
 ShowArea = true
 #-------------------------------
@@ -375,6 +377,7 @@ ShowArea = true
 #-------------------------------
 [083]
 # Bell Lake
+BattleBack = battlebgRoute
 Weather = Rain,50
 Bicycle = true
 MapPosition = 0,9,13
@@ -388,12 +391,14 @@ ShowArea = true
 #-------------------------------
 [085]
 # The Belfry
+BattleBack = battlebgIndoorZ
 MapPosition = 0,9,13
 ShowArea = true
 #-------------------------------
 [086]
 # Route 2
 MapSize = 2,1010
+BattleBack = battlebgRoute
 Weather = Rain,60
 Bicycle = true
 MapPosition = 0,10,12
@@ -408,6 +413,7 @@ ShowArea = true
 [088]
 # Route 3
 MapSize = 2,1100
+BattleBack = battlebgRoute
 Weather = Rain,30
 Bicycle = true
 MapPosition = 0,7,13
@@ -445,6 +451,7 @@ ShowArea = true
 #-------------------------------
 [094]
 # Lumishore Gym
+BattleBack = battlebgIndoorZ
 MapPosition = 0,6,13
 DarkMap = true
 ShowArea = true
@@ -457,6 +464,7 @@ ShowArea = true
 #-------------------------------
 [096]
 # Lumishore Rangers
+BattleBack = battlebgIndoorZ
 MapPosition = 0,6,13
 ShowArea = true
 #-------------------------------
@@ -473,16 +481,19 @@ ShowArea = true
 #-------------------------------
 [099]
 # S.S. Eliza Captain's Cabin
+BattleBack = battlebgIndoorZ
 MapPosition = 0,6,13
 ShowArea = true
 #-------------------------------
 [100]
 # S.S. Eliza Deck A
+BattleBack = battlebgIndoorZ
 MapPosition = 0,6,13
 ShowArea = true
 #-------------------------------
 [101]
 # S.S. Eliza Deck B
+BattleBack = battlebgIndoorZ
 MapPosition = 0,6,13
 ShowArea = true
 #-------------------------------
@@ -506,6 +517,7 @@ ShowArea = true
 #-------------------------------
 [105]
 # Milldam Gym
+BattleBack = battlebgIndoorZ
 MapPosition = 0,10,11
 ShowArea = true
 #-------------------------------
@@ -526,16 +538,19 @@ ShowArea = true
 #-------------------------------
 [109]
 # S.S. Eliza Restaurant
+BattleBack = battlebgIndoorZ
 MapPosition = 0,6,13
 ShowArea = true
 #-------------------------------
 [110]
 # S.S. Eliza Ship Hold
+BattleBack = battlebgIndoorZ
 MapPosition = 0,6,13
 ShowArea = true
 #-------------------------------
 [111]
 # S.S. Eliza Purser's Office
+BattleBack = battlebgIndoorZ
 MapPosition = 0,6,13
 ShowArea = true
 #-------------------------------
@@ -640,6 +655,7 @@ ShowArea = true
 [133]
 # Route 4
 MapSize = 3,001011001
+BattleBack = battlebgRoute
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,14,7
@@ -704,6 +720,7 @@ ShowArea = true
 #-------------------------------
 [143]
 # Canalis Train Station
+BattleBack = battlebgRoute
 Weather = Snow,20
 Bicycle = true
 MapPosition = 0,16,6
@@ -866,6 +883,14 @@ ShowArea = true
 MapPosition = 0,16,6
 ShowArea = true
 #-------------------------------
+[174]
+# Canalis Gym
+BattleBack = battlebgIndoorZ
+Bicycle = false
+MapPosition = 0,16,6
+Outdoor = true
+ShowArea = true
+#-------------------------------
 [175]
 # Trader's Den
 MapPosition = 0,16,6
@@ -913,6 +938,7 @@ ShowArea = true
 #-------------------------------
 [183]
 # Orange Burg Gym
+BattleBack = battlebgIndoorZ
 MapPosition = 0,16,10
 ShowArea = true
 #-------------------------------
@@ -942,6 +968,7 @@ ShowArea = true
 [188]
 # Route 5
 MapSize = 3,100100100
+BattleBack = battlebgRoute
 Weather = Rain,20
 Bicycle = true
 MapPosition = 0,15,11
@@ -998,6 +1025,7 @@ ShowArea = true
 #-------------------------------
 [197]
 # Floral Fields
+BattleBack = battlebgRoute
 Weather = Flower,50
 Bicycle = true
 MapPosition = 0,17,13
@@ -1023,6 +1051,7 @@ ShowArea = true
 #-------------------------------
 [201]
 # Pokémon Insect Institute
+BattleBack = battlebgIndoorZ
 MapPosition = 0,17,13
 ShowArea = true
 #-------------------------------
@@ -1086,6 +1115,7 @@ ShowArea = true
 #-------------------------------
 [210]
 # Harrow's Ascent - Base
+BattleBack = battlebgIndoorZ
 MapPosition = 0,14,8
 ShowArea = true
 #-------------------------------
@@ -1144,12 +1174,14 @@ ShowArea = true
 #-------------------------------
 [222]
 # Sulfur City Gym
+BattleBack = battlebgIndoorZ
 MapPosition = 0,18,15
 ShowArea = true
 #-------------------------------
 [223]
 # Storage
 MapSize = 0,
+BattleBack = battlebgIndoorZ
 MapPosition = 0,18,15
 ShowArea = true
 #-------------------------------
@@ -1193,6 +1225,7 @@ ShowArea = true
 #-------------------------------
 [231]
 # Molten Precipice 3F
+BattleBack = battlebgMountainRed
 Weather = Rain,20
 MapPosition = 0,18,15
 Outdoor = true
@@ -1200,6 +1233,7 @@ ShowArea = true
 #-------------------------------
 [232]
 # Ashen Flanks
+BattleBack = battlebgMountainRed
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,17,15
@@ -1209,6 +1243,7 @@ ShowArea = true
 [233]
 # Route 7
 MapSize = 4,1111
+BattleBack = battlebgRoute
 Weather = Rain,20
 Bicycle = true
 MapPosition = 0,14,15
@@ -1222,6 +1257,7 @@ ShowArea = true
 #-------------------------------
 [236]
 # Poké-Springs
+BattleBack = battlebgRoute
 Bicycle = true
 MapPosition = 0,14,15
 Outdoor = true
@@ -1229,6 +1265,7 @@ ShowArea = true
 #-------------------------------
 [237]
 # Poké-Springs
+BattleBack = battlebgRoute
 MapPosition = 0,14,15
 Outdoor = false
 ShowArea = true
