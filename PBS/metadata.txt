@@ -427,6 +427,7 @@ ShowArea = true
 #-------------------------------
 [090]
 # Lumishore City
+BattleBack = battlebgWater
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,6,13
@@ -561,6 +562,7 @@ ShowArea = true
 #-------------------------------
 [119]
 # Polder Reserve - A
+BattleBack = battlebgRoute
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,9,10
@@ -570,6 +572,7 @@ ShowArea = true
 #-------------------------------
 [120]
 # Polder Reserve - B
+BattleBack = battlebgRoute
 Weather = Rain,20
 Bicycle = true
 MapPosition = 0,9,10
@@ -589,6 +592,7 @@ ShowArea = true
 #-------------------------------
 [123]
 # The Great Dam
+BattleBack = battlebgRoute
 MapSize = 4,0110010001001100
 Weather = Rain,30
 Bicycle = true
@@ -640,6 +644,7 @@ ShowArea = true
 #-------------------------------
 [131]
 # Hedge Weald
+BattleBack = battlebgRoute
 Weather = Rain,20
 Bicycle = true
 MapPosition = 0,14,8
@@ -1057,6 +1062,7 @@ ShowArea = true
 #-------------------------------
 [202]
 # Polder Reserve - C
+BattleBack = battlebgRoute
 Weather = Rain,30
 Bicycle = true
 MapPosition = 0,9,10
@@ -1121,6 +1127,7 @@ ShowArea = true
 #-------------------------------
 [213]
 # Forest of Dukes
+BattleBack = battlebgRoute
 Weather = Rain,30
 Bicycle = true
 MapPosition = 0,16,8
@@ -1340,6 +1347,7 @@ ShowArea = true
 [250]
 # Station Warehouse
 Bicycle = false
+BattleBack = battlebgIndoorZ
 MapPosition = 0,13,16
 DarkMap = true
 Outdoor = false
@@ -1347,6 +1355,7 @@ ShowArea = true
 #-------------------------------
 [251]
 # Fiddle Fen - West
+BattleBack = battlebgRoute
 Weather = Rain,60
 Bicycle = true
 MapPosition = 0,11,15
@@ -1355,6 +1364,7 @@ ShowArea = true
 #-------------------------------
 [252]
 # Fiddle Fen - East
+BattleBack = battlebgRoute
 Weather = Rain,60
 Bicycle = true
 MapPosition = 0,11,15
