@@ -386,6 +386,7 @@ ShowArea = true
 #-------------------------------
 [084]
 # Bell Cavern
+BattleBack = battlebgCaveBrown
 MapPosition = 0,9,13
 ShowArea = true
 #-------------------------------
@@ -427,7 +428,7 @@ ShowArea = true
 #-------------------------------
 [090]
 # Lumishore City
-BattleBack = battlebgWater
+BattleBack = battlebgBeach
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,6,13
@@ -562,7 +563,7 @@ ShowArea = true
 #-------------------------------
 [119]
 # Polder Reserve - A
-BattleBack = battlebgRoute
+BattleBack = battlebgBeach
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,9,10
@@ -572,7 +573,7 @@ ShowArea = true
 #-------------------------------
 [120]
 # Polder Reserve - B
-BattleBack = battlebgRoute
+BattleBack = battlebgBeach
 Weather = Rain,20
 Bicycle = true
 MapPosition = 0,9,10
@@ -592,7 +593,7 @@ ShowArea = true
 #-------------------------------
 [123]
 # The Great Dam
-BattleBack = battlebgRoute
+BattleBack = battlebgBeach
 MapSize = 4,0110010001001100
 Weather = Rain,30
 Bicycle = true
@@ -603,6 +604,7 @@ ShowArea = true
 #-------------------------------
 [124]
 # Hedge Point
+BattleBack = battlebgRoute
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,14,8
@@ -627,18 +629,21 @@ ShowArea = true
 #-------------------------------
 [128]
 # Hedge Point Ruins
+BattleBack = battlebgCaveBrown
 MapPosition = 0,14,8
 DarkMap = true
 ShowArea = true
 #-------------------------------
 [129]
 # Bell Town Ruins
+BattleBack = battlebgCaveBrown
 MapPosition = 0,9,13
 DarkMap = true
 ShowArea = true
 #-------------------------------
 [130]
 # Milldam Powerplant
+BattleBack = battlebgIndoorZ
 MapPosition = 0,10,11
 ShowArea = true
 #-------------------------------
@@ -653,6 +658,7 @@ ShowArea = true
 #-------------------------------
 [132]
 # Hedge Weald Caverns
+BattleBack = battlebgCaveBlack
 Bicycle = true
 MapPosition = 0,14,8
 ShowArea = true
@@ -674,6 +680,7 @@ ShowArea = true
 #-------------------------------
 [135]
 # Secluded Bay
+BattleBack = battlebgBeach
 Weather = Rain,10
 Bicycle = true
 MapPosition = 0,6,13
@@ -682,6 +689,7 @@ ShowArea = true
 #-------------------------------
 [136]
 # Trench Grove
+BattleBack = battlebgCaveBrown
 Weather = Rain,30
 Bicycle = true
 MapPosition = 0,10,13
@@ -690,6 +698,7 @@ ShowArea = true
 #-------------------------------
 [137]
 # Canalis City
+BattleBack = battlebgRoute
 Weather = Snow,10
 Bicycle = true
 MapPosition = 0,16,6
@@ -744,6 +753,7 @@ ShowArea = true
 #-------------------------------
 [146]
 # Train Tunnel
+BattleBack = battlebgCaveBrown
 Bicycle = true
 MapPosition = 0,16,6
 DarkMap = true
@@ -758,7 +768,7 @@ ShowArea = true
 #-------------------------------
 [148]
 # Yssel Lake
-BattleBack = Snow
+BattleBack = battlebgMountainSnow
 Weather = Snow,50
 Bicycle = true
 MapPosition = 0,16,4
@@ -767,7 +777,7 @@ ShowArea = true
 #-------------------------------
 [149]
 # Yssel Lake
-BattleBack = Snow
+BattleBack = battlebgMountainSnow
 Weather = Snow,60
 Bicycle = true
 MapPosition = 0,16,4
@@ -776,6 +786,7 @@ ShowArea = true
 #-------------------------------
 [150]
 # Tidal Town
+BattleBack = battlebgMountainSnow
 Weather = Blizzard,40
 Bicycle = true
 MapPosition = 0,16,1
@@ -816,20 +827,24 @@ ShowArea = true
 #-------------------------------
 [158]
 # Tidal Glacier
+BattleBack = battlebgCaveIce
 MapPosition = 0,16,1
 ShowArea = true
 #-------------------------------
 [159]
 # Yssel Excavation B1
+BattleBack = battlebgCaveIce
 MapPosition = 0,16,4
 ShowArea = true
 #-------------------------------
 [160]
 # Yssel Excavation B2
+BattleBack = battlebgCaveIce
 ShowArea = true
 #-------------------------------
 [161]
 # Yssel Excavation B3
+BattleBack = battlebgCaveIce
 MapPosition = 0,16,4
 ShowArea = true
 #-------------------------------
@@ -982,24 +997,28 @@ ShowArea = true
 #-------------------------------
 [189]
 # Wooper Well
+BattleBack = battlebgCaveBlue
 MapPosition = 0,16,13
 Outdoor = false
 ShowArea = true
 #-------------------------------
 [190]
 # Route 5 Ruins
+BattleBack = battlebgCaveBlue
 MapPosition = 0,16,11
 DarkMap = true
 ShowArea = true
 #-------------------------------
 [191]
 # Harrow's Descent Cellar
+BattleBack = battlebgCaveBlue
 MapPosition = 0,16,11
 DarkMap = true
 ShowArea = true
 #-------------------------------
 [192]
 # Floralia Town
+BattleBack = battlebgRoute
 Weather = Flower,30
 Bicycle = true
 MapPosition = 0,17,13
@@ -1062,7 +1081,7 @@ ShowArea = true
 #-------------------------------
 [202]
 # Polder Reserve - C
-BattleBack = battlebgRoute
+BattleBack = battlebgBeach
 Weather = Rain,30
 Bicycle = true
 MapPosition = 0,9,10
@@ -1079,6 +1098,7 @@ ShowArea = true
 #-------------------------------
 [204]
 # Harrow's Descent Archive
+BattleBack = battlebgCaveBlack
 MapPosition = 0,16,12
 DarkMap = true
 ShowArea = true
@@ -1115,6 +1135,7 @@ ShowArea = true
 #-------------------------------
 [209]
 # Harrow's Descent Pillar
+BattleBack = battlebgCaveBlack
 MapPosition = 0,14,8
 DarkMap = true
 ShowArea = true
@@ -1141,12 +1162,14 @@ ShowArea = true
 #-------------------------------
 [215]
 # Gallow's Mount B1
+BattleBack = battlebgCaveFire
 Bicycle = false
 MapPosition = 0,18,14
 ShowArea = true
 #-------------------------------
 [216]
 # Gallow's Mount B2
+BattleBack = battlebgCaveFire
 Bicycle = false
 MapPosition = 0,18,14
 Outdoor = false
@@ -1154,6 +1177,7 @@ ShowArea = true
 #-------------------------------
 [217]
 # Sulfur City
+BattleBack = battlebgCaveFire
 Bicycle = true
 MapPosition = 0,18,15
 Outdoor = true
@@ -1199,24 +1223,28 @@ ShowArea = true
 #-------------------------------
 [225]
 # Harrow's Descent Gardens
+BattleBack = battlebgCaveBrown
 MapPosition = 0,10,12
 DarkMap = true
 ShowArea = true
 #-------------------------------
 [226]
 # Harrow's Descent Ledge
+BattleBack = battlebgCaveBlack
 MapPosition = 0,10,12
 DarkMap = true
 ShowArea = true
 #-------------------------------
 [227]
 # Harrow's Descent Narthex
+BattleBack = battlebgCaveBlack
 MapPosition = 0,14,8
 DarkMap = true
 ShowArea = true
 #-------------------------------
 [228]
 # Molten Precipice 1F
+BattleBack = battlebgCaveFire
 MapPosition = 0,18,15
 ShowArea = true
 #-------------------------------
@@ -1227,6 +1255,7 @@ ShowArea = true
 #-------------------------------
 [230]
 # Molten Precipice 2F
+BattleBack = battlebgCaveFire
 MapPosition = 0,18,15
 ShowArea = true
 #-------------------------------
@@ -1259,6 +1288,7 @@ ShowArea = true
 #-------------------------------
 [235]
 # Molten Ruins
+BattleBack = battlebgCaveFire
 MapPosition = 0,17,15
 ShowArea = true
 #-------------------------------
@@ -1307,7 +1337,7 @@ ShowArea = true
 [243]
 # Industrielle Sewers
 MapSize = 1,11
-BattleBack = city
+BattleBack = battlebgCaveBlack
 MapPosition = 0,13,15
 DarkMap = true
 Environment = None
@@ -1332,6 +1362,7 @@ ShowArea = true
 #-------------------------------
 [248]
 # Unown Dimension
+BattleBack = battlebgCaveBlack
 Bicycle = false
 Outdoor = false
 ShowArea = true
@@ -1374,6 +1405,7 @@ ShowArea = true
 #-------------------------------
 [253]
 # Pokemon Adventure
+BattleBack = battlebgCaveBlack
 Bicycle = false
 Dungeon = true
 Outdoor = false
@@ -1381,12 +1413,14 @@ ShowArea = true
 #-------------------------------
 [254]
 # Harrow's Descent Corruption
+BattleBack = battlebgCaveBlack
 MapPosition = 0,11,15
 Outdoor = false
 ShowArea = true
 #-------------------------------
 [255]
 # Fiddle Fen - Ruins
+BattleBack = battlebgRoute
 Weather = Rain,30
 Bicycle = true
 MapPosition = 0,11,15
