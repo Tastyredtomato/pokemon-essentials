@@ -770,3 +770,4 @@
 750,FUSE,Fuse,Fuses,8,0,"A fuse to an electric device. Use it to fix broken fuse boxes.",0,0,6,
 751,ANOMALYFRAGMENT,Anomaly Fragment,Anomaly Fragments,1,0,"This shard seems to phase in and out of existence. Use it to unleash its essence.",2,0,0,
 752,LIFTKEY,Lift Key,Lift Keys,8,0,"A key that operates the elevator in The Government Office Building.",0,0,6,
+753,CASTLEKEY,Castle Key,Castle Keys,8,0,"A key that opens the way to a mysterious castle.",0,0,6,
