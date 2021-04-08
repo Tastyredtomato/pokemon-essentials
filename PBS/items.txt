@@ -772,4 +772,4 @@
 752,LIFTKEY,Lift Key,Lift Keys,8,0,"A key that operates the elevator in The Government Office Building.",0,0,6,
 753,CASTLEKEY,Castle Key,Castle Keys,8,0,"A key that opens the way to a mysterious castle.",0,0,6,
 754,TM102,TM102,TM102s,4,3000,"The user restores its own HP. The amount of HP regained varies with the weather.",3,0,0,MORNINGSUN,
-754,TM103,TM103,TM103s,4,3000,"The user restores its own HP. The amount of HP regained varies with the weather.",3,0,0,MOONLIGHT
+755,TM103,TM103,TM103s,4,3000,"The user restores its own HP. The amount of HP regained varies with the weather.",3,0,0,MOONLIGHT

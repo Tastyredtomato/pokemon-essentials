@@ -457,6 +457,12 @@ Type2 = FIGHTING
 Pokedex = Amplified and tempered by Team Rocket's armour, Armoured Mewtwo has the capability to balance out its psychic and physical strength.
 BattlerShadowX = 9
 #-------------------------------
+[MEW,1]
+FormName = Ancient Mew
+Type1 = ROCK
+Type2 = PSYCHIC
+Pokedex = A Pokemon restored from an ancient fossil. It seems to have the image of the ancestor pokemon Mew.
+#-------------------------------
 [PICHU,1]
 FormName = Spiky-Eared
 BattlerEnemyX = 3
