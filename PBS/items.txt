@@ -658,8 +658,8 @@
 640,RUINEDTABLET,Ruined Tablet,Ruined Tablets,8,0,"This broken tablet bears the image of a strange Pokémon.",0,0,6,
 641,CAPTAINSKEY,Captain's Key, Captain's Keys,8,0,"This key is part of the Eliza League and grants access to the Captain's Quarters.",0,0,6,
 642,POKEMEDICINE,Poké Medicine, Poké Medicine,8,0,"A pouch of dried leaves to be delivered to nurse Joy in Hedge Point.",0,0,6,
-643,GSBALL,GS Ball,GS Balls,3,300,"A Mysterious Ball for catching a specific elusive Pokémon.",0,2,4,
-644,SHINYBALL,Shiny Ball,Shiny Balls,3,300,"A green ball designed to capture shiny Pokémon.",0,2,4,
+643,GSBALL,GS Ball,GS Balls,3,300,"A Mysterious Ball for catching a specific elusive Pokémon.",0,4,4,
+644,SHINYBALL,Shiny Ball,Shiny Balls,3,300,"A green ball designed to capture shiny Pokémon.",0,4,4,
 645,HM07,HM07,HM07s,4,0,"Traps the foe inside a whirlpool that lasts for four to five turns. The user can pass through whirlpools.",4,0,0,WHIRLPOOL
 646,CONRADLETTER,Conrad's Letter,Conrad's Letters,8,0,"A letter from Conrad to Gym Leader Nienke of Tidal Town.",0,0,6,
 647,POWERDAMPENER,Power Dampener,Power Dampeners,1,100,"An item to be held by a Pokémon. It is a heavy robotic armour that promotes strong growth but lowers Speed.",0,0,0,
