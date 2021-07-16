@@ -38,18 +38,6 @@
 47,East,8,52,West,0
 # Route 2 (21) - Route 7 (47)
 21,East,77,47,West,0
-# Bell Town (78) - Route 3 (88)
-78,West,0,88,East,0
-# Lumishore City (90) - Route 3 (88)
-90,East,10,88,West,0
-# Route 2 (86) - Bell Town (78)
-86,West,32,78,East,0
-# Route 1 (43) - Bell Town (78)
-43,North,0,78,South,9
-# Route 2 (86) - Milldam City (102)
-86,North,0,102,South,9
-# Route 1 (43) - Lyre Town (32)
-43,South,0,32,North,18
 # Polder Reserve - C (202) - Polder Reserve - A (119)
 202,North,60,119,South,0
 # Polder Reserve - B (120) - Polder Reserve - A (119)
@@ -130,3 +118,35 @@
 252,North,0,255,South,25
 # Fiddle Fen - East (252) - Fiddle Fen - West (251)
 252,West,0,251,East,0
+# Bell Town (78) - Route 1 (264)
+78,South,46,264,North,0
+# Lyre Town (32) - Route 1 (264)
+32,North,55,264,South,0
+# Route 1 (43) - Route 1 (264)
+43,East,0,264,West,0
+# Bell Lake (83) - Route 3 (88)
+83,South,0,88,North,59
+# Route 3 (265) - Route 3 (88)
+265,South,0,88,North,3
+# Bell Town (78) - Route 3 (88)
+78,West,0,88,East,0
+# Lumishore City (90) - Route 3 (88)
+90,East,10,88,West,0
+# Route 3 (265) - Bell Lake (83)
+265,East,0,83,West,10
+# Bell Town (78) - Bell Lake (83)
+78,North,9,83,South,0
+# Bell Town (78) - Route 3 (265)
+78,North,0,265,South,47
+# Route 1 (43) - Route 3 (265)
+43,West,0,265,East,130
+# Route 2 (266) - Bell Town (78)
+266,West,0,78,East,23
+# Route 1 (43) - Bell Town (78)
+43,North,0,78,South,9
+# Route 2 (86) - Route 2 (266)
+86,West,55,266,East,0
+# Route 2 (86) - Milldam City (102)
+86,North,0,102,South,9
+# Route 1 (43) - Lyre Town (32)
+43,South,0,32,North,18

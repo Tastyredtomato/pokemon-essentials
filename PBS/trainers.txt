@@ -931,3 +931,59 @@ Pokemon = ANORITH,30
 LoseText = "I tripped..."
 Pokemon = BEAUTIFLY,31
 Pokemon = DUSTOX,31
+#--------------------------------
+[CIVILSERVANT,Albert]
+LoseText = "I still don't know the solution!"
+Pokemon = UNOWN,32
+Pokemon = PORYGON,32
+#--------------------------------
+[CIVILSERVANT,Philip]
+LoseText = "I was bested!"
+Pokemon = GIRAFARIG,30
+Pokemon = KADABRA,35
+#--------------------------------
+[CIVILSERVANT2,Judy]
+LoseText = "Fine, you got past me. But this isn't the end."
+Pokemon = CLAYDOL,38
+Pokemon = METANG,32
+#--------------------------------
+[BIRDKEEPER,Luke]
+LoseText = "Whenever you beat a trainer, you get some money."
+Pokemon = PIDGEY,5
+Pokemon = PIDGEY,7
+Pokemon = MURKROW,8
+#--------------------------------
+[BUGCATCHER1,Archie]
+LoseText = "They do have a nasty sting."
+Pokemon = BEEDRILL,31
+Pokemon = BEEDRILL,28
+#--------------------------------
+[FARMHAND,Colton]
+LoseText = "Don't run off!"
+Pokemon = MAREEP,8
+Pokemon = MAREEP,8
+Pokemon = FLAAFFY,15
+#--------------------------------
+[BUGCATCHER1,Parker]
+LoseText = "Agh, I was cut."
+Pokemon = SCYTHER,17
+#--------------------------------
+[FISHERMAN,Wally]
+LoseText = "My rod!"
+Pokemon = MAGIKARP,10
+#--------------------------------
+[FISHERMAN,Wally,1]
+LoseText = "My fish!"
+Pokemon = MAGIKARP,17
+Pokemon = MAGIKARP,12
+#--------------------------------
+[FISHERMAN,Wally,2]
+LoseText = "And fall again..."
+Pokemon = MAGIKARP,19
+Pokemon = GYARADOS,25
+Pokemon = GYARADOS,25
+#--------------------------------
+[YOUNGSTER,MARTIN]
+LoseText = "I tried my best."
+Pokemon = RATTATA,8
+Pokemon = RATTATA,8

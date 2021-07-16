@@ -103,3 +103,4 @@
 101,TEAMROCKET_MF2,Team Rockets,32,,1-21 Victory Against Trainer!loop,,Mixed,32,
 102,STATUE,Statue,32,,1-21 Victory Against Trainer!loop,1-19 Look! Mini Skirtloop,Male,,
 103,LEADER_Francesca,Gym Leader,100,1-32 Battle! Gym Leaderloop,1-33 Victory Against Gym Leader!loop,,Female,,
+104,CIVILSERVANT2,Civil Servant,20,,1-21 Victory Against Trainer!loop,1-19 Look! Mini Skirtloop,Female,,
